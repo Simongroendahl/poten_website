@@ -1,21 +1,33 @@
-.menu-card .card1, .card2, .card3 {
+.menu .card1, .card2, .card3 {
     width: 275px;
     height: 225px;
     margin: auto; /* Fjern senere ***********************/
-    margin-bottom: var(--spacing-large);
+    -webkit-mask-image: linear-gradient(transparent, black 50%);
+    mask-image: linear-gradient(transparent, black 50%);
     border-radius: 0 0 var(--rounding-medium) var(--rounding-medium);
 }
 
-.menu-card .text {
+.menu .text {
     width: 275px;
     height: 50px;
-    background-color: var(--green);
-    border-radius: var(--rounding-medium) var(--rounding-medium) 0 0;
     display: flex;
 
     & p {
         color: white;
         text-align: center;
+    }
+}
+
+.menu .card {
+    position: relative;
+    border-radius: var(--rounding-medium);
+    margin-bottom: var(--spacing-large);
+    background-color: var(--darkgreen);
+
+    & .fade-bg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
     }
 }
 
