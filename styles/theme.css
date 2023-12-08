@@ -1,0 +1,21 @@
+:root {
+    /* Colors */
+    --darkbrown: #494536;
+    --brown: #877862;
+    --lightbrown: #a3998e;
+    --darkgreen: #102a21;
+    --green: #204d2c;
+    --lightgreen: #337336;
+    --brownred: #864A38;
+    --darktext: #282722;
+
+    /* Spacing */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 28px;
+
+    /* Rounding */
+    --rounded-small: 20px;
+    --rounded-medium: 60px;
+    --rounded-large: 100px;
+}

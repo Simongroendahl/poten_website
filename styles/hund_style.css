@@ -1,5 +1,12 @@
 .hund-card {
+    width: 275px;
+    height: 225px;
+    margin: auto; /* Fjern senere ***********************/
 
+    & p {
+        color: white;
+        background-color: green;
+    }
 }
 
 .card1 {

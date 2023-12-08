@@ -1,0 +1,16 @@
+@import url(theme.css);
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Solid:wght@300;400;900&family=Neucha&family=Outfit:wght@300;400;500;700&display=swap');
+/* Fonts'Londrina Outline', 'Londrina Solid', 'Neucha', 'Outfit' */
+
+/* General classnames */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
