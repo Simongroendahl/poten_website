@@ -46,19 +46,22 @@
   padding-bottom: var(--spacing-medium);
 }
 
-/* General styling for the hero images on the dog subpages */
+.bg-image-nature {
+  background-image: url(../images/palm-bg.jpg);
+}
+/* General styling for the hero images on the dog subpages
 .hero-img {
   position: relative;
   padding: 25px 25px;
-}
+}*/
 
-/* specific styling for the hero images on the dog subpage "foder" */
+/* specific styling for the hero images on the dog subpage "foder"
 .foder-bg {
   background-image: url(../images/dog-food-light.jpg);
   background-position: center center;
   background-size: cover;
   background-size: 300%;
-}
+}*/
 
 /* General styling for cards */
 .styling-card {
@@ -83,8 +86,16 @@
 }
 
 .white-card-styling {
-  padding: var(--spacing-medium) var(--spacing-large) var(--spacing-small) var(--spacing-large);
+  padding: 0 var(--spacing-large) var(--spacing-small) var(--spacing-large);
 
+}
+
+.red-card {
+  background-color: rgba(var(--brownred), 0.8);
+  color: white;
+  border: 5px solid white;
+  border-radius: var(--rounding-small);
+  margin-bottom: var(--spacing-large);
 }
 
 /* Styling images with flex-row */

@@ -13,14 +13,14 @@
     padding: 0 var(--spacing-medium) 0 var(--spacing-medium);
 }
 
-/* Headings and paragraphs */
+/* Headings, paragraphs and lists */
 h1, h2, h3, button {
     font-family: 'Londrina Solid', sans-serif;
 }
 
 h1 {
     font-size: 2.2rem;
-    margin: var(--spacing-medium) 0 var(--spacing-medium) 0;
+    margin: 0 0 var(--spacing-large) 0;
     text-align: center;
 }
 
@@ -53,6 +53,7 @@ button:not(.unstyled) {
     background-color: rgb(var(--darkgreen));
 }
 
+/* Generel classnames for flex and grid --> not specific */
 .flex-col {
     display: flex;
     flex-direction: column;
@@ -61,4 +62,44 @@ button:not(.unstyled) {
 .flex-row {
     display: flex;
     flex-direction: row;
+}
+
+/* General styling for lines next to titles */
+.line {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    border-radius: var(--rounding-small);
+}
+
+.line-heading {
+    margin-bottom: var(--spacing-large);
+
+    & h1 {
+        margin: 0;
+        margin-left: var(--spacing-small);
+        margin-right: var(--spacing-small);
+    }
+}
+
+/* General classnames for margin and spacing --> not specific */
+.mb-large {
+    margin-bottom: var(--spacing-large);
+}
+.mt-large {
+    margin-top: var(--spacing-large);
+}
+
+.mb-medium {
+    margin-bottom: var(--spacing-medium);
+}
+.mt-medium {
+    margin-top: var(--spacing-medium);
+}
+
+.mb-small {
+    margin-bottom: var(--spacing-small);
+}
+.mt-small {
+    margin-top: var(--spacing-small);
 }
