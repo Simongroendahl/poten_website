@@ -1,4 +1,4 @@
-/* General styling for the 3 dog menu cards*/
+/* General styling for the 3 cat menu cards*/
 .menu .card1,
 .card2,
 .card3 {
@@ -27,7 +27,7 @@
   background-color: rgb(var(--darkgreen));
 }
 
-/* Specific styling for the 3 dog menu-cards */
+/* Specific styling for the 3 cat menu-cards */
 .menu .card1 {
   background-image: url("../images/cat_eating_treat.webp");
   background-position: center center;
@@ -44,4 +44,25 @@
   background-image: url("../images/cat_playing.webp");
   background-position: center;
   background-size: 110%;
+}
+
+/* "Kat" subpages styling */
+/*Spacing between sections in the text */
+.tabcontent p,
+ul {
+  padding-bottom: var(--spacing-medium);
+}
+
+/* General styling for the hero images on the dog subpages */
+.hero-img {
+  position: relative;
+  padding: 25px 25px;
+}
+
+/* specific styling for the hero images on the dog subpage "foder" */
+.foder-bg {
+  background-image: url(../images/cat_flowerfield_banner.webp);
+  background-position: center center;
+  background-size: cover;
+  background-size: 100%;
 }
