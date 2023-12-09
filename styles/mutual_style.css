@@ -9,6 +9,10 @@
     margin: auto;
 }
 
+body {
+    padding: 0 var(--spacing-medium) 0 var(--spacing-medium);
+}
+
 /* Headings and paragraphs */
 h1, h2, h3 {
     font-family: 'Londrina Solid', sans-serif;
@@ -16,7 +20,8 @@ h1, h2, h3 {
 
 h1 {
     font-size: 2.2rem;
-    margin-bottom: var(--spacing-medium);
+    margin: var(--spacing-medium) 0 var(--spacing-medium) 0;
+    text-align: center;
 }
 
 h2 {

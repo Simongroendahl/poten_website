@@ -1,13 +1,13 @@
 :root {
     /* Colors */
-    --darkbrown: #494536;
-    --brown: #877862;
-    --lightbrown: #a3998e;
-    --darkgreen: #102a21;
-    --green: #204d2c;
-    --lightgreen: #337336;
-    --brownred: #864A38;
-    --darktext: #282722;
+    --darkbrown: 73,69,54;
+    --brown: 135,120,98;
+    --lightbrown: 163,153,142;
+    --darkgreen: 16,42,33;
+    --green: 32,77,44;
+    --lightgreen: 51,115,54;
+    --brownred: 134,74,56;
+    --darktext: 40,39,34;
 
     /* Spacing */
     --spacing-small: 12px;
