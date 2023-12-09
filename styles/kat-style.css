@@ -1,0 +1,47 @@
+/* General styling for the 3 dog menu cards*/
+.menu .card1,
+.card2,
+.card3 {
+  width: 275px;
+  height: 225px;
+  -webkit-mask-image: linear-gradient(transparent, black 50%);
+  mask-image: linear-gradient(transparent, black 50%);
+  border-radius: 0 0 var(--rounding-medium) var(--rounding-medium);
+  background-size: cover;
+}
+
+.menu .text {
+  height: 50px;
+  display: flex;
+
+  & p {
+    color: white;
+    text-align: center;
+  }
+}
+
+.menu .card {
+  position: relative;
+  border-radius: var(--rounding-medium);
+  margin-bottom: var(--spacing-large);
+  background-color: rgb(var(--darkgreen));
+}
+
+/* Specific styling for the 3 dog menu-cards */
+.menu .card1 {
+  background-image: url("../images/cat_eating_treat.webp");
+  background-position: center center;
+  background-size: 100%;
+}
+
+.card2 {
+  background-image: url("../images/cat_on_washer.webp");
+  background-position: center;
+  background-size: 100%;
+}
+
+.card3 {
+  background-image: url("../images/cat_playing.webp");
+  background-position: center;
+  background-size: 110%;
+}
