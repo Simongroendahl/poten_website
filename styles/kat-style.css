@@ -59,12 +59,41 @@ ul {
   padding: 25px 25px;
 }
 
+.bg-image-nature {
+  background-image: url(../images/vandfarve.jpg);
+}
+.styling-card {
+  padding: var(--spacing-medium) var(--spacing-large) var(--spacing-small)
+    var(--spacing-large);
+
+  & h2 {
+    text-align: center;
+  }
+}
+
+.barf-info {
+  background-image: url("../images/kat-barf-baggrund.jpg");
+  background-position: center center;
+  background-size: cover;
+
+  border: 5px solid white;
+  color: white;
+  border-radius: var(--rounding-small);
+  margin-bottom: var(--spacing-large);
+
+  & .barf-margin {
+    margin-top: calc(var(--spacing-large) * 4);
+  }
+}
+
 /* specific styling for the hero images on the dog subpage "foder" */
 .foder-bg {
   background-image: url(../images/cat_flowerfield_banner.webp);
-  background-position: center center;
+  background-position: center right;
   background-size: cover;
-  background-size: 100%;
+  background-size: 130%;
+  color: white;
+  letter-spacing: 2px;
 }
 
 /* Styling the tab */
