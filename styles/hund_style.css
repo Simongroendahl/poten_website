@@ -1,13 +1,14 @@
+/* General styling for the 3 dog menu cards*/
 .menu .card1, .card2, .card3 {
     width: 275px;
     height: 225px;
     -webkit-mask-image: linear-gradient(transparent, black 50%);
     mask-image: linear-gradient(transparent, black 50%);
     border-radius: 0 0 var(--rounding-medium) var(--rounding-medium);
+    background-size: cover;
 }
 
 .menu .text {
-    width: 275px;
     height: 50px;
     display: flex;
 
@@ -22,37 +23,36 @@
     border-radius: var(--rounding-medium);
     margin-bottom: var(--spacing-large);
     background-color: rgb(var(--darkgreen));
-
-    & .fade-bg {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-    }
 }
 
-.card1 {
+/* Specific styling for the 3 dog menu-cards */
+.menu .card1 {
     background-image: url('../images/dog-food-img.jpg');
-    background-size: cover;
     background-position: center center;
-    background-size: 350%;
+    background-size: 400%;
 }
 
 .card2 {
     background-image: url('../images/dog-supply-img.jpg');
-    background-size: cover;
 }
 
 .card3 {
     background-image: url('../images/dog-toy-img.jpg');
-    background-size: cover;
 }
 
-/* Hund undersider */
+/* "Hund" subpages styling */
+/*Spacing between sections in the text */
+.tabcontent p, ul {
+  padding-bottom: var(--spacing-medium);
+}
+
+/* General styling for the hero images on the dog subpages */
 .hero-img {
   position: relative;
   padding: 25px 25px;
 }
 
+/* specific styling for the hero images on the dog subpage "foder" */
 .foder-bg {
   background-image: url(../images/dog-food-light.jpg);
   background-position: center center;
@@ -60,26 +60,29 @@
   background-size: 300%;
 }
 
-.pd-card {
-  padding: var(--spacing-large) var(--spacing-large) var(--spacing-small) var(--spacing-large);
-
-  & p, ul {
-    padding-bottom: var(--spacing-medium);
-  }
+/* General styling for cards */
+.styling-card {
+  padding: var(--spacing-medium) var(--spacing-large) var(--spacing-small) var(--spacing-large);
 
   & h2 {
     text-align: center;
   }
 }
 
+/* General styling for info boxex */
 .info-box {
   background-color: rgb(var(--darkbrown));
   color: white;
   width: 215px;
   border-radius: var(--rounding-medium);
   margin-bottom: var(--spacing-large);
+
+  & p, ul {
+    padding-bottom: var(--spacing-medium);
+  }
 }
 
+/* Specific styling for card with info about barf */
 .barf-card {
   background-image: url('../images/schfer-hund-dark.jpg');
   background-position: center center;
@@ -93,7 +96,7 @@
   }
 }
 
-/* Style the tab */
+/* Styling the tab */
 .tab {
     overflow: hidden;
     height: 85px;
@@ -124,17 +127,16 @@
     }
   }
   
-  /* Change background color of buttons on hover */
+  /* Change hover effect and active affect on tab-buttons */
   .tab button:hover {
     background-color: rgba(var(--lightgreen), 0.3);
   }
   
-  /* Create an active/current tablink class */
   .tab button.active {
     background-color: rgba(var(--lightgreen), 0.8);
   }
   
-  /* Style the tab content */
+  /* General styling of the tab content */
   .tabcontent {
     display: none;
     padding: 0;
