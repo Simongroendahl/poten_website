@@ -1,105 +1,156 @@
-@import url('theme.css');
+@import url("theme.css");
 
 /* Fonts - 'Londrina Outline', 'Londrina Solid', 'Neucha', 'Outfit' */
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Solid:wght@300;400;900&family=Neucha&family=Outfit:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Solid:wght@300;400;900&family=Neucha&family=Outfit:wght@300;400;500;700&display=swap");
 
 /* General styling */
 * {
-    max-width: 1600px;
-    margin: auto;
+  max-width: 1600px;
+  margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .content {
-    padding: 0 var(--spacing-medium) 0 var(--spacing-medium);
+  padding: 0 var(--spacing-medium) 0 var(--spacing-medium);
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Headings, paragraphs and lists */
-h1, h2, h3, button {
-    font-family: 'Londrina Solid', sans-serif;
+h1,
+h2,
+h3,
+button,
+.herotext {
+  font-family: "Londrina Solid", sans-serif;
 }
 
 h1 {
-    font-size: 2.2rem;
-    margin: 0 0 var(--spacing-large) 0;
-    text-align: center;
+  font-size: 2.2rem;
+  margin: 0 0 var(--spacing-large) 0;
+  text-align: center;
 }
 
 h2 {
-    font-size: 1.9;
-    font-weight: 300;
-    margin-bottom: var(--spacing-small);
+  font-size: 1.9;
+  font-weight: 300;
+  margin-bottom: var(--spacing-small);
 }
 
-p, ol, ul {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 300;
-    font-size: 1.1rem;
+p,
+ol,
+ul {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
 }
 
 /* General classnames */
 button:not(.unstyled) {
-    width: 170px;
-    height: 65px;
-    text-align: center;
-    color: white;
-    font-size: 1.3rem;
-    letter-spacing: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 170px;
+  height: 65px;
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    border-radius: var(--rounding-small);
-    border: 4px solid white;
-    background-color: rgb(var(--darkgreen));
+  border-radius: var(--rounding-small);
+  border: 4px solid white;
+  background-color: rgb(var(--darkgreen));
 }
 
 /* Generel classnames for flex and grid --> not specific */
 .flex-col {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .flex-row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 /* General styling for lines next to titles */
 .line {
-    width: 100%;
-    height: 5px;
-    background-color: black;
-    border-radius: var(--rounding-small);
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  border-radius: var(--rounding-small);
 }
 
 .line-heading {
-    margin-bottom: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
 
-    & h1 {
-        margin: 0;
-        margin-left: var(--spacing-small);
-        margin-right: var(--spacing-small);
-    }
+  & h1 {
+    margin: 0;
+    margin-left: var(--spacing-small);
+    margin-right: var(--spacing-small);
+  }
 }
 
 /* General classnames for margin and spacing --> not specific */
 .mb-large {
-    margin-bottom: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
 }
 .mt-large {
-    margin-top: var(--spacing-large);
+  margin-top: var(--spacing-large);
 }
 
 .mb-medium {
-    margin-bottom: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
 }
 .mt-medium {
-    margin-top: var(--spacing-medium);
+  margin-top: var(--spacing-medium);
 }
 
 .mb-small {
-    margin-bottom: var(--spacing-small);
+  margin-bottom: var(--spacing-small);
 }
 .mt-small {
-    margin-top: var(--spacing-small);
+  margin-top: var(--spacing-small);
+}
+
+/* Nav bar styling */
+.nav_wrapper {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 100vw;
+  padding-top: 16px;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 2.2rem;
+  color: whitesmoke;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+nav ul li {
+  list-style-type: none;
 }
