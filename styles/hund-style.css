@@ -82,6 +82,21 @@
   }
 }
 
+.white-card-styling {
+  padding: var(--spacing-medium) var(--spacing-large) var(--spacing-small) var(--spacing-large);
+
+}
+
+/* Styling images with flex-row */
+.img-flex {
+  flex: 1;
+  margin-bottom: var(--spacing-large);
+
+  & img {
+    width: 50%;
+  }
+}
+
 /* Specific styling for card with info about barf */
 .barf-card {
   background-image: url('../images/schfer-hund-dark.jpg');
@@ -90,6 +105,7 @@
   border: 5px solid white;
   color: white;
   border-radius: var(--rounding-small);
+  margin-bottom: var(--spacing-large);
 
   & .barf-margin {
     margin-top: calc(var(--spacing-large) * 4);
