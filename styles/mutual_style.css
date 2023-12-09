@@ -14,7 +14,7 @@ body {
 }
 
 /* Headings and paragraphs */
-h1, h2, h3 {
+h1, h2, h3, button {
     font-family: 'Londrina Solid', sans-serif;
 }
 
@@ -26,15 +26,15 @@ h1 {
 
 h2 {
     font-size: 1.9;
+    font-weight: 300;
     margin-bottom: var(--spacing-small);
 }
 
-p {
+p, ol, ul {
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
     font-size: 1.1rem;
 }
-
 
 /* General classnames */
 .flex-col {
