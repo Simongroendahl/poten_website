@@ -115,17 +115,18 @@
 /* Styling the tab */
 .tab {
     overflow: hidden;
-    height: 85px;
+    height: 100px;
     margin-bottom: var(--spacing-medium);
 
     & img {
-      width: 40px;
+      width: 50px;
       height: 100%;
     }
   }
 
   /* Style the buttons that are used to open the tab content */
   .tab button {
+    width: 100px;
     background-color: inherit;
     float: left;
     border: none;
@@ -133,13 +134,14 @@
     cursor: pointer;
     padding: calc(var(--spacing-small) / 3) var(--spacing-small);
     transition: 0.3s;
+    border-radius: var(--rounding-small);
 
     & p {
       font-family: 'Lorenda Solid', sans-serif;
-      font-size: 1.3;
+      font-size: 1rem;
       font-weight: 600;
       padding: 0;
-      margin: 0px;
+      margin: 0 0 5px 0;
     }
   }
   
