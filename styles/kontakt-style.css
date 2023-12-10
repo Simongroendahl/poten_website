@@ -1,12 +1,21 @@
-.kontakt_wrapper {
+#kontakt_body {
   width: 100%;
   height: 1080px;
   background-image: url(/images/kontakt_baggrund.png);
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.kontakt_wrapper {
   position: relative;
+  margin: auto;
+  width: 1600px;
+  height: 1080px;
+  padding: 0 8rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-content: center;
 }
 
 /* Form styling */
@@ -15,6 +24,7 @@ input,
 button,
 textarea {
   display: block;
+  font-family: monospace;
 }
 
 form {
@@ -32,6 +42,7 @@ form {
 
 label {
   color: whitesmoke;
+  font-family: "Londrina Solid", sans-serif;
   font-size: 1.4rem;
   text-align: left;
 }
@@ -44,8 +55,11 @@ input {
 }
 
 textarea {
+  position: absolute;
+  left: 24.5%;
   width: 354px;
   height: 160px;
   padding: 0.7em;
   margin-bottom: 0.5rem;
+  resize: vertical;
 }
