@@ -7,6 +7,7 @@
 * {
   max-width: 1600px;
   margin: auto;
+  /*margin: 0;*/
   box-sizing: border-box;
 }
 
@@ -139,6 +140,7 @@ nav {
   width: 100vw;
   display: flex;
   justify-content: space-between;
+  position: absolute;
 }
 
 nav a {
@@ -157,16 +159,52 @@ nav ul li {
   list-style-type: none;
 }
 
+.home_knap {
+  color: #1e1e1e;
+  display: flex;
+  gap: 1rem;
+}
+
+#home_knap_hvid {
+  color: whitesmoke;
+}
+
+.button_box {
+  position: relative;
+  display: flex;
+  padding: 0 2rem;
+  gap: 1rem;
+}
+
+.poten_logo {
+  background-image: url(/images/poten_logo.svg);
+  background-repeat: no-repeat;
+  height: 58px;
+  width: 60px;
+}
+
+.poten_logo_hvid {
+  background-image: url(/images/poten_logo_hvid.png);
+  background-repeat: no-repeat;
+  height: 58px;
+  width: 60px;
+}
+
 /* Footer */
 
 footer {
   background-color: rgba(20, 20, 18, 0.95);
   height: 360px;
+  margin: 0;
 }
 
 .footer_wrapper {
   height: 360px;
-  display: flex;
+  width: 100%;
+  padding: 0 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: start;
 }
 
 .footer_logo {
@@ -176,9 +214,28 @@ footer {
   height: 145px;
 }
 
+.footercontainer_left {
+  height: 360px;
+  width: 100%;
+  justify-items: left;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.footercontainer_mid {
+  height: 360px;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
 .footercontainer_right {
-  display: flex;
-  flex-direction: column;
+  height: 360px;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
 }
 
 .footer_bold {
@@ -199,4 +256,14 @@ footer {
   font-weight: 300;
   line-height: normal;
   letter-spacing: 1.2px;
+}
+
+.footer_ikon_box {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.footer_ikon {
+  height: 48px;
+  width: 48px;
 }

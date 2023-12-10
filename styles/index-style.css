@@ -18,12 +18,6 @@
   font-size: 2.2rem;
 }
 
-.home_knap {
-  color: #1e1e1e;
-  display: flex;
-  gap: 1rem;
-}
-
 /* skal rykkes hen til main styling */
 .knap {
   display: flex;
@@ -62,20 +56,6 @@
 .ikon_size {
   height: 32px;
   width: 32px;
-}
-
-.button_box {
-  position: relative;
-  display: flex;
-  padding: 0 2rem;
-  gap: 1rem;
-}
-
-.poten_logo {
-  background-image: url(/images/poten_logo.svg);
-  background-repeat: no-repeat;
-  height: 58px;
-  width: 60px;
 }
 
 .landingbox_1 {
