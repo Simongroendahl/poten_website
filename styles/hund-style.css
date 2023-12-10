@@ -49,23 +49,26 @@
 .bg-image-nature {
   background-image: url(../images/palm-bg.jpg);
 }
-/* General styling for the hero images on the dog subpages
+/* General styling for the hero images on the dog subpages */
 .hero-img {
   position: relative;
   padding: 25px 25px;
-}*/
+}
 
-/* specific styling for the hero images on the dog subpage "foder"
+/* specific styling for the hero images on the dog subpage "foder" */
 .foder-bg {
   background-image: url(../images/dog-food-light.jpg);
   background-position: center center;
   background-size: cover;
   background-size: 300%;
-}*/
+}
 
 /* General styling for cards */
 .styling-card {
   padding: var(--spacing-medium) var(--spacing-large) var(--spacing-small) var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+  border: 5px solid white;
+  color: white;
 
   & h2 {
     text-align: center;
@@ -75,10 +78,9 @@
 /* General styling for info boxex */
 .info-box {
   background-color: rgb(var(--darkbrown));
-  color: white;
-  width: 215px;
+  width: 250px;
   border-radius: var(--rounding-medium);
-  margin-bottom: var(--spacing-large);
+  border: 0;
 
   & p, ul {
     padding-bottom: var(--spacing-medium);
@@ -86,16 +88,23 @@
 }
 
 .white-card-styling {
-  padding: 0 var(--spacing-large) var(--spacing-small) var(--spacing-large);
+  padding: var(--spacing-large) var(--spacing-large) var(--spacing-medium) var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+  color: var(--darktext);
+}
 
+.white-background {
+  background-color: white;
 }
 
 .red-card {
   background-color: rgba(var(--brownred), 0.8);
-  color: white;
-  border: 5px solid white;
   border-radius: var(--rounding-small);
-  margin-bottom: var(--spacing-large);
+}
+
+.green-card {
+  background-color: rgba(var(--darkgreen), 0.8);
+  border-radius: var(--rounding-small);
 }
 
 /* Styling images with flex-row */
@@ -108,19 +117,31 @@
   }
 }
 
-/* Specific styling for card with info about barf */
+/* Specific styling for card with info about barf, kødben & */
 .barf-card {
   background-image: url('../images/schfer-hund-dark.jpg');
   background-position: center center;
   background-size: cover;
-  border: 5px solid white;
-  color: white;
   border-radius: var(--rounding-small);
-  margin-bottom: var(--spacing-large);
 
   & .barf-margin {
     margin-top: calc(var(--spacing-large) * 4);
   }
+}
+
+.kodben-card1 {
+  background-image: url('../images/dog-chewing.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-size: 200%;
+  border-radius: var(--rounding-small);
+}
+
+.kodben-card2 {
+  background-image: url('../images/dog-chewing.jpg');
+  background-position: center center;
+  background-size: cover;
+  border-radius: var(--rounding-small);
 }
 
 /* Styling the tab */
@@ -128,6 +149,7 @@
     overflow: hidden;
     height: 100px;
     margin-bottom: var(--spacing-medium);
+    background-color: white;
 
     & img {
       width: 50px;

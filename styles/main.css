@@ -26,10 +26,6 @@ img {
   height: auto;
 }
 
-.content {
-  padding: 0 var(--spacing-medium) 0 var(--spacing-medium);
-}
-
 a {
   text-decoration: none;
 }
@@ -50,7 +46,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.9;
+  font-size: 1.8rem;
   font-weight: 300;
   margin-bottom: var(--spacing-small);
 }
@@ -78,6 +74,11 @@ button:not(.unstyled) {
   border-radius: var(--rounding-small);
   border: 4px solid white;
   background-color: rgb(var(--darkgreen));
+}
+
+/* Generel classnames for "content" */
+.content {
+  padding: 0 var(--spacing-medium) 0 var(--spacing-medium);
 }
 
 /* Generel classnames for flex and grid --> not specific */
@@ -109,26 +110,9 @@ button:not(.unstyled) {
   }
 }
 
-/* General classnames for margin and spacing --> not specific */
+/* General styling for spacing */
 .mb-large {
   margin-bottom: var(--spacing-large);
-}
-.mt-large {
-  margin-top: var(--spacing-large);
-}
-
-.mb-medium {
-  margin-bottom: var(--spacing-medium);
-}
-.mt-medium {
-  margin-top: var(--spacing-medium);
-}
-
-.mb-small {
-  margin-bottom: var(--spacing-small);
-}
-.mt-small {
-  margin-top: var(--spacing-small);
 }
 
 /* Nav bar styling */
