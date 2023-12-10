@@ -1,3 +1,7 @@
+body * {
+  margin: auto;
+}
+
 /* General styling for the 3 dog menu cards*/
 .menu .card1, .card2, .card3 {
     width: 275px;
@@ -27,17 +31,17 @@
 
 /* Specific styling for the 3 dog menu-cards */
 .menu .card1 {
-    background-image: url('../images/dog-food-img.jpg');
+    background-image: url('../images/dog-food-img.webp');
     background-position: center center;
     background-size: 400%;
 }
 
 .card2 {
-    background-image: url('../images/dog-supply-img.jpg');
+    background-image: url('../images/dog-supply-img.webp');
 }
 
 .card3 {
-    background-image: url('../images/dog-toy-img.jpg');
+    background-image: url('../images/dog-toy-img.webp');
 }
 
 /* "Hund" subpages styling */
@@ -47,7 +51,7 @@
 }
 
 .bg-image-nature {
-  background-image: url(../images/palm-bg.jpg);
+  background-image: url('../images/palm-bg.webp');
 }
 /* General styling for the hero images on the dog subpages */
 .hero-img {
@@ -57,7 +61,7 @@
 
 /* specific styling for the hero images on the dog subpage "foder" */
 .foder-bg {
-  background-image: url(../images/dog-food-light.jpg);
+  background-image: url('../images/dog-food-light.webp');
   background-position: center center;
   background-size: cover;
   background-size: 300%;
@@ -119,7 +123,7 @@
 
 /* Specific styling for card with info about barf, kødben & */
 .barf-card {
-  background-image: url('../images/schfer-hund-dark.jpg');
+  background-image: url('../images/schfer-hund-dark.webp');
   background-position: center center;
   background-size: cover;
   border-radius: var(--rounding-small);
@@ -130,7 +134,7 @@
 }
 
 .kodben-card1 {
-  background-image: url('../images/dog-chewing.jpg');
+  background-image: url('../images/dog-chewing.webp');
   background-position: center center;
   background-size: cover;
   background-size: 200%;
@@ -138,7 +142,7 @@
 }
 
 .kodben-card2 {
-  background-image: url('../images/dog-chewing.jpg');
+  background-image: url('../images/dog-chewing.webp');
   background-position: center center;
   background-size: cover;
   border-radius: var(--rounding-small);

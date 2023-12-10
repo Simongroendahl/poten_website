@@ -1,0 +1,8 @@
+@media (min-width: 600px) {
+    .menu .card1, .card2, .card3 {
+        width: 450px;
+        height: 225px;
+    }
+
+
+}
