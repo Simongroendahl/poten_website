@@ -7,6 +7,7 @@
 * {
   max-width: 1600px;
   margin: auto;
+  box-sizing: border-box;
 }
 
 html {
@@ -131,6 +132,7 @@ button:not(.unstyled) {
   position: absolute;
   width: 100vw;
   padding-top: 16px;
+  z-index: 999;
 }
 
 nav {
@@ -153,4 +155,48 @@ nav ul {
 
 nav ul li {
   list-style-type: none;
+}
+
+/* Footer */
+
+footer {
+  background-color: rgba(20, 20, 18, 0.95);
+  height: 360px;
+}
+
+.footer_wrapper {
+  height: 360px;
+  display: flex;
+}
+
+.footer_logo {
+  background-image: url(/images/poten_logo_groen.svg);
+  background-size: cover;
+  width: 150px;
+  height: 145px;
+}
+
+.footercontainer_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_bold {
+  color: #fff;
+  font-family: Londrina Solid;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+
+.footer_p {
+  color: #fff;
+  font-family: Londrina Solid;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1.2px;
 }
