@@ -19,7 +19,6 @@ textarea {
 
 form {
   display: grid;
-
   grid-template-rows: repeat(3, 1fr) 2fr;
   gap: 2rem;
 }
@@ -28,14 +27,25 @@ form {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
+  justify-self: start;
 }
 
 label {
   color: whitesmoke;
   font-size: 1.4rem;
+  text-align: left;
 }
 
 input {
   width: 354px;
   height: 40px;
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  width: 354px;
+  height: 160px;
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
 }
