@@ -52,7 +52,9 @@ body * {
 
 .bg-image-nature {
   background-image: url('../images/palm-bg.webp');
+  background-size: cover;
 }
+
 /* General styling for the hero images on the dog subpages */
 .hero-img {
   position: relative;
@@ -121,10 +123,10 @@ body * {
   }
 }
 
-/* Specific styling for card with info about barf, kødben & */
+/* Specific styling for card with info about barf & kødben */
 .barf-card {
   background-image: url('../images/schfer-hund-dark.webp');
-  background-position: center center;
+  background-position: 50% 100%;
   background-size: cover;
   border-radius: var(--rounding-small);
 

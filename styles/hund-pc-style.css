@@ -1,7 +1,70 @@
 @media (min-width: 600px) {
+    /* General styling for "hund" and subpages */
+    .content {
+        padding: 0 calc(var(--spacing-large) * 2) 0 calc(var(--spacing-large) * 2);
+      }
+
+    /* Menu under "hund" */
     .menu .card1, .card2, .card3 {
-        width: 450px;
+        width: 500px;
         height: 225px;
+    }
+
+    .card2 {
+        background-position: center center;
+    }
+
+    .card3 {
+        background-position: center center;
+    }
+
+    /* Styling for the hero images on dog subpage "foder" */
+    .hero-img {
+        padding: 65px 65px;
+    }
+    .foder-bg {
+        background-size: 200%;
+    }
+
+    /* Styling cards */
+    .info-box {
+        width: 400px;
+      }
+
+    .white-card-styling {
+        padding: var(--spacing-large) calc(var(--spacing-large) * 2) var(--spacing-medium) calc(var(--spacing-large) * 2);
+        margin-bottom: var(--spacing-large);
+    }
+
+    /* Styling for images */
+    .img-flex img {
+        max-width: 200px;
+        height: 100%;
+      }
+
+    /* Specific styling for card with info about barf & kødben */
+    .barf-card {
+        background-position: 50% 67%;
+        background-size: 200%;
+  
+        & .barf-margin {
+            margin-top: calc(var(--spacing-large) * 4);
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 calc(var(--spacing-large) * 3) 0 calc(var(--spacing-large)*3);
+        gap: var(--spacing-large);
+
+    & .card1, .card2, .card3 {
+        width: 350px;
+        height: 500px;
+        flex: 1;
+        }
     }
 
 
