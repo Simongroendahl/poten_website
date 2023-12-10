@@ -1,3 +1,6 @@
+body * {
+  margin: auto;
+}
 /* General styling for the 3 cat menu cards*/
 .menu .card1,
 .card2,
