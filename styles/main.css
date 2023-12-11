@@ -70,7 +70,9 @@ h2 {
   margin-bottom: var(--spacing-small);
 }
 
-p, ol, ul {
+p,
+ol,
+ul {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 1.1rem;
@@ -213,7 +215,7 @@ nav ul li a:hover {
 }
 
 .poten_logo {
-  background-image: url(/images/poten_logo.svg);
+  background-image: url(images/poten_logo.svg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 30px;
@@ -221,7 +223,7 @@ nav ul li a:hover {
 }
 
 .poten_logo_hvid {
-  background-image: url(/images/poten_logo_hvid.png);
+  background-image: url(images/poten_logo_hvid.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 30px;
@@ -250,7 +252,7 @@ footer {
 }
 
 .footer_logo {
-  background-image: url(/images/poten_logo_groen.svg);
+  background-image: url(images/poten_logo_groen.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -384,7 +386,7 @@ footer {
   }
 
   .footer_logo {
-    background-image: url(/images/poten_logo_groen.svg);
+    background-image: url(images/poten_logo_groen.svg);
     background-size: cover;
     background-repeat: no-repeat;
     justify-self: center;
