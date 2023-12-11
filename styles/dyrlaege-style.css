@@ -1,0 +1,13 @@
+.hero-img {
+  position: relative;
+  padding: 40px 40px;
+}
+.laege-bg {
+  background-image: url("../images/dyrlaege_banner.webp");
+
+  background-position: left;
+  background-size: cover;
+  background-size: 100%;
+  color: black;
+  letter-spacing: 2px;
+}

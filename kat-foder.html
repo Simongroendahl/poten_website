@@ -4,14 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kat - Foder, kødben og godbidder</title>
+    <title>Kat - BARF, tør og vådfoder</title>
 
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/kat-style.css">
+    <link rel="stylesheet" href="styles/kat-pc-style.css">
 </head>
 
 <body>
-    <header></header>
+    <header class="nav_wrapper">
+        <nav>
+            <a href="index.html" class="home_knap">
+                <div class="poten_logo"></div>
+                <div class="poten_home">Poten Amager</div>
+            </a>
+            <ul>
+                <li><a href="hund.html">Hund</a></li>
+                <li><a href="kat.html">Kat</a></li>
+                <li><a href="dyrlaege.html">Dyrlæge</a></li>
+                <li><a href="levering.html">Levering</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
     <main class="bg-image-nature">
         <div class="hero-img foder-bg">
             <h1>Barf, tør- og vådfoder</h1>
@@ -26,7 +41,7 @@
                     alt="Hundemad i hundeskål">
                 <p>Tørfoder</p>
             </button>
-            <button class="tablink unstyled" onclick="openTab(event, 'Kodben')"><img src="icons/5186 - Fish Food.svg"
+            <button class="tablink unstyled" onclick="openTab(event, 'Kodben')"><img src="icons/kattemad.svg"
                     alt="Dåse">
                 <p>Vådfoder</p>
             </button>
@@ -47,24 +62,32 @@
                     <h1>Barf</h1>
                     <div class="line"></div>
                 </div>
-                <div class="barf-info styling-card">
-                    <h2>Katte elsker kød... Prøv BARF</h2>
-                    <p>– Specielt fjerkræ, indmad & oksekød med brusk. Vi har et kæmpe udvalg i butikkerne i 500 gram, 1
-                        og 2 kilo. Fint hakket og groft hakket samt hele kyllinge halse.
-                        Om nogen er kattene jo domesticerede rovdyr, og hvorfor så snyde dem for det rå?
-                    </p>
-                    <p> Katte er dog lidt anderledes skruet sammen end hundene indvendigt, så der gælder lidt andre
-                        regler med hensyn til fodring. Katte skal f.eks. have adgang til mad løbende; ikke noget med
-                        fastedage eller bendage, og katte kan heller ikke optage vegetabilske fedtsyrer.
-
-                        Mange katte bryder sig ikke om fiskeolie – i det hele taget er katte ret kræsne – så derfor kan
-                        man tilsætte maden hele rå æg eller servere daggammel kylling.</p>
-                </div>
                 <div class="flex-col">
+                    <div class="barf-info styling-card ">
+                        <h2>Katte elsker kød... Prøv BARF</h2>
+                        <p>– Specielt fjerkræ, indmad & oksekød med brusk. Vi har et kæmpe udvalg i butikkerne i 500
+                            gram, 1
+                            og 2 kilo. Fint hakket og groft hakket samt hele kyllinge halse.
+                            Om nogen er kattene jo domesticerede rovdyr, og hvorfor så snyde dem for det rå?
+                        </p>
+                        <p> Katte er dog lidt anderledes skruet sammen end hundene indvendigt, så der gælder lidt andre
+                            regler med hensyn til fodring. Katte skal f.eks. have adgang til mad løbende; ikke noget med
+                            fastedage eller bendage, og katte kan heller ikke optage vegetabilske fedtsyrer.
+
+                            Mange katte bryder sig ikke om fiskeolie – i det hele taget er katte ret kræsne – så derfor
+                            kan
+                            man tilsætte maden hele rå æg eller servere daggammel kylling.</p>
+
+                    </div> <img class="display-pic" src="images/cat-w-fish.webp" alt="cat eating fish">
+                </div>
+
+                <div class="flex-col">
+
                     <h2>Kom ind og få en snak, så vi kan hjælpe dig med at komme godt igang med råfodring.
                     </h2>
                     <h2> Din kat vil elske dig for det.</h2>
                 </div>
+
 
             </div>
         </div>
@@ -110,18 +133,55 @@
                     <p>
                         Sunde grøntsager, bær, frugter og urter såsom:
                     </p>
-                    <div class="food-list">
+                    <div class="food-list flex-row">
                         <ul>
                             <li>ærter</li>
                             <li>spinat </li>
                             <li>tranebær</li>
                             <li>græskar</li>
                         </ul>
+                        <ul>
+                            <li>pebermynte</li>
+                            <li>kamille</li>
+                            <li>brombær</li>
+                            <li>lucerne spirer</li>
+                        </ul>
+                        <ul>
+                            <li>tang</li>
+                            <li>linser</li>
+                            <li>gulerødder</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
-
+            <div class="styling-card food-info-1 red-card">
+                <img src="images/ZiwiPeak.webp" alt="ZiwiPeak foder">
+                <div class="food-text flex-col">
+                    <h2>
+                        Ziwi peak LAM & MAKREL
+                        400 g pr. pose - Luft tørret kød i flager.
+                    </h2>
+                    <p>100 % ren mad!
+                        Ziwi peak indeholder: </p>
+                    <div class="food-list flex-col">
+                        <ul>
+                            <li>Makrel, lam, lamme – lever, kallun, nyre, hjerte og lunge</li>
+                            <li>New Zealandsk grønlæbet musling, Inulin fra cikorie, tørret kelp, havsalt, magnesium
+                                aminosyrekompleks,</li>
+                            <li>zink aminosyrekompleks, copper aminosyrekompleks, selengær, mangan
+                                aminosyrekompleks,
+                                taurin.</li>
+                        </ul>
+                    </div>
+                    <p>Vitaminer:</p>
+                    <div class="food-list flex-col">
+                        <ul>
+                            <li>B1-vitamin Supplement, folinsyre, og vitamin D3 Supplement</li>
+                            <li>Naturligt konserveret med blandede tocopheroler.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="Kodben" class="tabcontent">
@@ -130,11 +190,69 @@
                 <h1>Vådfoder</h1>
                 <div class="line"></div>
             </div>
-
+            <div class="info-box ">
+                <h2>Hvorfor vælge vådfoder?</h2>
+            </div>
+            <div class="vaadfoder-info styling-card">
+                <p>Vådfoder til katte er en vigtig del af en sund og afbalanceret kost for vores pelsede venner. Det er
+                    kendt for at være en god kilde til væske, hvilket kan være særligt vigtigt for katte, der ikke altid
+                    drikker nok vand. Den høje vandprocent i vådfoder hjælper med at opretholde en sund hydrering og
+                    understøtter samtidig nyrefunktionen.</p>
+                <p>Ud over væskeindholdet er vådfoder ofte rigt på proteiner, som er essentielle for en kattefødevares
+                    næringsmæssige profil. Proteiner er afgørende for muskelopbygning, energiproduktion og andre vigtige
+                    kropsfunktioner.
+                    Det er vigtigt at vælge et vådfoder, der opfylder kattens specifikke ernæringsbehov og er fri for
+                    unødvendige tilsætningsstoffer eller fyldstoffer.
+                    Her er hvad vi har i butikken - kom ind, så finder vi ud af hvad der passer bedst til din kat.</p>
+            </div>
 
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer_wrapper">
+            <div class="footercontainer_left">
+                <div class="footer_adresse">
+                    <div class="footer_bold">
+                        Poten Amager
+                    </div>
+                    <div class="footer_p">
+                        Amagerbrogade 121<br>
+                        2300 København S
+                    </div>
+                </div>
+                <div class="footer_tlf">
+                    <div class="footer_bold">
+                        Telefon nr.
+                    </div>
+                    <div class="footer_p">
+                        25 21 23 00
+                    </div>
+                </div>
+                <div class="footer_ikon_box">
+                    <a href="https://www.facebook.com/potenamager"><img src="images/facebook_ikon.png"
+                            alt="Ikon for Facebook" class="footer_ikon"></a>
+                    <a href="https://www.instagram.com/poten_amager/?hl=da"><img src="images/instagram_ikon.png"
+                            alt="Ikon for Instagram" class="footer_ikon"></a>
+                </div>
+            </div>
+            <div class="footercontainer_mid">
+                <div class="footer_logo"></div>
+                <div class="footer_aabningstider">
+                    <div class="footer_bold">Åbningstider</div>
+                    <div class="footer_p">Mandag - Fredag: 11.00 - 18.00</div>
+                    <div class="footer_p">Lørdag: 10.00 - 14.00</div>
+                    <div class="footer_p">Søndag: Lukket</div>
+                </div>
+            </div>
+            <div class="footercontainer_right">
+                <a href="hund.html" class="footer_p">Hund</a>
+                <a href="kat.html" class="footer_p">Kat</a>
+                <a href="dyrlaege.html" class="footer_p">Dyrlæge</a>
+                <a href="levering.html" class="footer_p">Levering</a>
+                <a href="kontakt.html" class="footer_p">Kontakt</a>
+            </div>
+        </div>
+    </footer>
     <script src="poten.js"></script>
 </body>
 

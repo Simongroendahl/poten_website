@@ -119,6 +119,10 @@ body * {
 .green-card {
   background-color: rgba(var(--darkgreen), 0.8);
   border-radius: var(--rounding-small);
+
+  & img {
+    max-width: 350px;
+  }
 }
 
 /* Styling images with flex-row */
