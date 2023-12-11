@@ -31,6 +31,7 @@
       flex: 1;
     }
   }
+
   .menu .card1 {
     background-size: 150%;
   }
@@ -48,6 +49,7 @@
   .food-info-1 {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    gap: 30px;
   }
   .food-pic {
     display: grid;
@@ -64,10 +66,24 @@
     padding: 40px;
     border: 5px solid white;
     color: white;
+
     border-radius: var(--rounding-small);
     margin-bottom: var(--spacing-large);
     display: flex;
     align-content: space-between;
-    gap: 50px;
+    gap: 80px;
+  }
+  .gap {
+    gap: 20px;
+  }
+}
+@media (min-width: 1300px) {
+  .menu .card1,
+  .menu .card2,
+  .menu .card3 {
+    width: 100%;
+    min-width: 350px;
+    height: 450px;
+    flex: 1;
   }
 }
