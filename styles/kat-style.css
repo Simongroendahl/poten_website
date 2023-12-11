@@ -2,9 +2,6 @@ body * {
   margin: auto;
 }
 /* Styling for header */
-header {
-  background-color: rgb(51, 115, 54);
-}
 
 /* General styling for the 3 cat menu cards*/
 .menu .card1,
@@ -83,6 +80,8 @@ header {
     display: grid;
     justify-self: end;
   }
+}
+.food-list {
 }
 /* "Kat" subpages styling */
 /*Spacing between sections in the text */
