@@ -21,6 +21,13 @@
   font-weight: 300;
 }
 
+.landing_text_hero {
+  font-family: "Londrina Solid", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding-right: 2rem;
+}
+
 /* skal rykkes hen til main styling */
 .knap {
   display: flex;
@@ -70,9 +77,19 @@
 
 #landing_knap {
   width: 292px;
-  background-color: #194e2b;
+  background-color: #16bd2f;
   box-shadow: 0px 18px 40px -12px rgba(16, 132, 92, 0.35);
   color: whitesmoke;
+}
+
+.hero_emphasis {
+  color: #27ad54;
+  font-size: 4rem;
+  padding: 0 0.4rem;
+}
+
+.button_box {
+  padding-right: 1rem;
 }
 
 .ikon_size {
@@ -83,9 +100,9 @@
 .landingbox_1 {
   display: grid;
   justify-content: end;
-  align-items: center;
+  align-items: start;
   z-index: 2;
-  margin-top: 24rem;
+  margin-top: 28rem;
 }
 
 .landingbox_2 {
