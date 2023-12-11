@@ -2,7 +2,11 @@
     /* General styling for "hund" and subpages */
     .content {
         padding: 0 calc(var(--spacing-large) * 2) 0 calc(var(--spacing-large) * 2);
-      }
+
+        & .pc-card {
+            padding: 0 var(--spacing-medium) 0 var(--spacing-medium);
+        }
+    }
 
     /* Menu under "hund" */
     .menu .card1, .card2, .card3 {
@@ -10,12 +14,25 @@
         height: 225px;
     }
 
-    .card2 {
+    .menu .card1 {
+        background-size: 300%;
+    }
+
+    .menu .card2 {
         background-position: center center;
     }
 
-    .card3 {
-        background-position: center center;
+    .menu .card3 {
+        background-size: 125%;
+        background-position: center left;
+    }
+
+    .card .text {
+        height: 75px;
+    
+        & p {
+            font-size: 1.5rem;
+        }
     }
 
     /* Styling for the hero images on dog subpage "foder" */
@@ -28,7 +45,7 @@
 
     /* Styling cards */
     .info-box {
-        width: 400px;
+        width: 425px;
       }
 
     .white-card-styling {
@@ -51,9 +68,30 @@
             margin-top: calc(var(--spacing-large) * 4);
         }
     }
+
+    .kodben-card1 {
+        background-size: 100%;
+      }
 }
 
 @media (min-width: 1000px) {
+    .pc-hide {
+        display: none;
+    }
+
+    .pc-only {
+        display: block;
+    }
+
+    img.pc-only {
+        width: 175px;
+    }
+
+    .info-box {
+        width: 400px;
+        margin: 0;
+    }
+
     .menu {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -61,11 +99,71 @@
         gap: var(--spacing-large);
 
     & .card1, .card2, .card3 {
-        width: 350px;
-        height: 500px;
+        width: 100%;
+        min-width: 275px;
+        height: 450px;
+        margin: 0;
         flex: 1;
         }
     }
 
+    .card .text {
+        height: 75px;
+    
+        & p {
+            font-size: 1.5rem;
+        }
+    }
 
+    .menu .card1 {
+        background-size: 550%;
+    }
+
+    .menu .card3 {
+        background-size: cover;
+        background-position: 27%;
+    }
+
+    .barf-card.pc-grid-2-1 {
+        column-gap: calc(var(--spacing-large) * 5);
+    }
+
+    /* Styling the tabs */
+    .tab {
+        height: 125px;
+        margin-bottom: var(--spacing-medium);
+    
+        & img {
+          width: 70px;
+        }
+    }
+
+    .tab button {
+        width: 150px;
+        padding: calc(var(--spacing-small) / 2) var(--spacing-small);
+    
+        & p {
+          font-size: 1.3rem;
+          font-weight: 600;
+          padding: 0;
+          margin: 0 0 5px 0;
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .menu .card1, .menu .card2, .menu .card3 {
+        width: 350px;
+        height: 450px;
+        flex: 1;
+    
+    }
+
+    .card .text {
+        height: 100px;
+    
+        & p {
+            font-size: 1.5rem;
+        }
+    }
 }

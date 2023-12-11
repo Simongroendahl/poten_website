@@ -1,0 +1,34 @@
+@media  (min-width: 1000px) {
+    .pc-flex-row {
+        display: flex;
+        flex-direction: row;
+        gap: var(--spacing-large);
+    }
+
+    .pc-flex-col {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-large);
+    }
+
+    .pc-grid-2-1 {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .pc-flex-center {
+        align-items: center;
+    }
+
+    .pc-flex1 {
+        flex: 1;
+    }
+
+    .pc-flex2 {
+        flex: 2;
+    }
+
+    .pc-flex3 {
+        flex: 3;
+    }
+}
