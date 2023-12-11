@@ -139,8 +139,12 @@ button:not(.unstyled) {
   flex-direction: row;
   position: relative;
   width: 100%;
+  max-width: 1600px;
   padding: 1.6rem 2rem;
   z-index: 999;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 nav {
@@ -215,6 +219,8 @@ nav ul li a:hover {
 /* Footer */
 
 footer {
+  display: block;
+  bottom: 0;
   background-color: rgba(20, 20, 18, 0.95);
   height: 360px;
   width: 100%;
@@ -222,6 +228,7 @@ footer {
 }
 
 .footer_wrapper {
+  bottom: 0;
   height: 360px;
   width: 100%;
   padding: 0 6.25rem;
