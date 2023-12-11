@@ -82,6 +82,7 @@ body * {
   }
 }
 .food-list {
+  gap: var(--spacing-medium);
 }
 /* "Kat" subpages styling */
 /*Spacing between sections in the text */
@@ -104,6 +105,7 @@ ul {
 .bg-image-nature {
   background-image: url(../images/vandfarve.jpg);
 }
+
 .styling-card {
   padding: var(--spacing-medium) var(--spacing-large) var(--spacing-small)
     var(--spacing-large);
@@ -163,7 +165,7 @@ ul {
 
 /* specific styling for the hero images on the cat subpage "foder" */
 .foder-bg {
-  background-image: url(../images/cat_flowerfield_banner.webp);
+  background-image: url("../images/cat_flowerfield_banner.webp");
   background-position: center right;
   background-size: cover;
   background-size: 130%;
