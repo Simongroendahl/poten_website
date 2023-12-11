@@ -101,6 +101,7 @@
   background-color: #57d713;
   box-shadow: 0px 18px 40px -12px rgba(16, 132, 92, 0.35);
   color: whitesmoke;
+  border: none;
 }
 
 .hero_emphasis {
