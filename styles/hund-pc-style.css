@@ -100,16 +100,17 @@
     }
 
     .menu {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: row;
         margin: 0 calc(var(--spacing-large) * 3) 0 calc(var(--spacing-large) * 3);
         gap: var(--spacing-large);
 
-    & .card1, .card2, .card3 {
-        width: 100%;
-        min-width: 275px;
-        height: 450px;
-        margin: 0;
+        & .card1, .card2, .card3 {
+            width: 100%;
+            min-width: 275px;
+            height: 450px;
+            margin: 0;
+            flex: 1;
         }
     }
 
@@ -118,7 +119,7 @@
     
         & p {
             font-size: 1.5rem;
-            padding: var(--spacing-large);
+            max-width: 80%;
         }
     }
 
@@ -165,22 +166,6 @@
 }
 
 @media (min-width: 1300px) {
-    .menu .card1, .menu .card2, .menu .card3 {
-        width: 100%;
-        min-width: 350px;
-        height: 450px;
-        flex: 1;
-    
-    }
-
-    .card .text {
-        height: 100px;
-    
-        & p {
-            font-size: 1.5rem;
-        }
-    }
-
     .barf-card {
         background-position: 32% 62%;
         background-size: 130%;

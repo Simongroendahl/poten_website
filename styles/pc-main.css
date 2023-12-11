@@ -1,4 +1,4 @@
-@media screen (min-width: 600px) {
+@media (min-width: 600px) {
     .pc-margin-0 {
         margin: 0;
     }

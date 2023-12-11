@@ -114,6 +114,14 @@ body * {
 .red-card {
   background-color: rgba(var(--brownred), 0.8);
   border-radius: var(--rounding-small);
+
+  & img {
+    max-width: 170px;
+  }
+
+  & #naturea-width {
+    max-width: 500px;
+  }
 }
 
 .green-card {
