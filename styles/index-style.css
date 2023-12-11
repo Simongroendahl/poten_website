@@ -11,7 +11,6 @@
   max-width: 1440px;
   height: 100%;
   margin-top: 4rem;
-
   container-type: inline-size;
 }
 
@@ -56,14 +55,34 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  width: 196px;
-  height: 64px;
   flex-shrink: 0;
   border-radius: 22px;
   border: 2px solid #171717;
   background-color: #f5f5f5;
-  box-shadow: 0px 18px 40px -12px rgba(240, 240, 240, 0.35);
-  padding: 0 4rem;
+  box-shadow: 2px 18px 40px -12px rgb(9, 9, 9);
+  gap: 1rem;
+}
+
+.knaptekst {
+  color: #131313;
+  font-family: Londrina Solid;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: none;
+  white-space: nowrap;
+  letter-spacing: 0.48px;
+  padding: 1rem 2rem;
+}
+
+#landing_knap {
+  width: 292px;
+  /*background-color: #1d4208;*/
+  background: linear-gradient(355deg, rgba(4, 57, 7, 1) 22%, rgba(16, 145, 37, 1) 100%);
+  box-shadow: 5px 18px 40px -12px rgb(9, 9, 9);
+  box-shadow: -1px -3px 48px 4px rgba(56, 219, 26, 0.3) inset;
+  color: whitesmoke;
+  border: none;
 }
 
 .knap:hover {
@@ -85,25 +104,6 @@
   }
 }
 
-.knaptekst {
-  color: #131313;
-  font-family: Londrina Solid;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.48px;
-  padding: 0 1rem 0 1.4rem;
-}
-
-#landing_knap {
-  width: 292px;
-  background-color: #57d713;
-  box-shadow: 0px 18px 40px -12px rgba(16, 132, 92, 0.35);
-  color: whitesmoke;
-  border: none;
-}
-
 .hero_emphasis {
   color: #27ad54;
   font-size: 4rem;
@@ -119,7 +119,7 @@
 
 .button_box {
   padding-right: 1rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .ikon_size {
@@ -180,14 +180,18 @@
   }
 }
 
-/* Mobile Version query */
+/* Mobile Version query -- Mobile Version query -- Mobile Version query */
 
 @media screen and (max-width: 400px) {
   .hero-wrapper {
     display: grid;
     grid-template-rows: auto;
+    grid-template-columns: 1fr;
     width: 100%;
+    max-width: 400px;
     height: 100%;
+    margin-top: 0;
+    margin: auto;
   }
 
   .video_desktop {
@@ -196,36 +200,107 @@
 
   .video_mobile {
     display: block;
-    width: 375px;
-    height: 1080px;
+    width: 100%;
+    height: auto;
     z-index: 500;
   }
 
   .landingbox_1 {
     background-color: transparent;
+    position: absolute;
     display: grid;
-    justify-content: end;
-    align-items: start;
-    margin-top: 2rem;
-  }
-
-  .landingbox_2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    gap: 1rem;
-    text-align: justify;
-    background-color: #0b2209;
-    color: whitesmoke;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
+    padding: 0;
+    margin-top: 2rem;
+    max-width: 400px;
+    z-index: 999;
   }
 
   .landingbox_3 {
-    right: 0;
-    height: 1080px;
-    width: 360px;
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    padding: 0;
+  }
+
+  /* Knapper */
+
+  .button_box {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+    margin-top: 0;
+  }
+
+  .knap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    border-radius: 22px;
+    border: 2px solid #171717;
+    background-color: #f5f5f5;
+    box-shadow: 2px 18px 40px -12px rgb(9, 9, 9);
+    gap: 1rem;
+  }
+
+  .knaptekst {
+    color: #131313;
+    font-family: Londrina Solid;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: none;
+    white-space: nowrap;
+    letter-spacing: 0.48px;
+    padding: 0.3rem 0;
+  }
+
+  #landing_knap {
+    width: 292px;
+    /*background-color: #1d4208;*/
+    background: linear-gradient(355deg, rgba(4, 57, 7, 1) 22%, rgba(16, 145, 37, 1) 100%);
+    box-shadow: 5px 18px 40px -12px rgb(9, 9, 9);
+    box-shadow: -1px -3px 48px 4px rgba(56, 219, 26, 0.3) inset;
+    color: whitesmoke;
+    border: none;
+  }
+
+  .herotext {
+    text-align: center;
+    font-size: 20cqw;
+    font-weight: 300;
+    padding-right: 0;
+    color: white;
+  }
+
+  .hero_emphasis {
+    color: #27ad54;
+    font-size: 12cqw;
+    padding: 0 0.4rem;
+  }
+
+  .hero_emphasis2 {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 0px;
+    font-size: 12cqw;
+    padding: 0 0.4rem;
+  }
+
+  .landing_text {
+    font-family: "Londrina Solid", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+
+  .landing_text_hero {
+    font-family: "Londrina Solid", sans-serif;
+    font-size: 8cqw;
+    font-weight: 400;
+    padding-right: 0;
+    color: white;
   }
 }
