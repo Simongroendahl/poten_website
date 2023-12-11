@@ -1,6 +1,11 @@
 body * {
   margin: auto;
 }
+/* Styling for header */
+header {
+  background-color: rgb(51, 115, 54);
+}
+
 /* General styling for the 3 cat menu cards*/
 .menu .card1,
 .card2,
@@ -49,6 +54,23 @@ body * {
   background-size: 110%;
 }
 
+@media (min-width: 1000px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 0px 25px 0px;
+  }
+  .menu .card1,
+  .card2,
+  .card3 {
+    width: 300px;
+    height: 250px;
+    -webkit-mask-image: linear-gradient(transparent, black 50%);
+    mask-image: linear-gradient(transparent, black 50%);
+    border-radius: 0 0 var(--rounding-medium) var(--rounding-medium);
+    background-size: cover;
+  }
+}
 /* "Kat" subpages styling */
 /*Spacing between sections in the text */
 .tabcontent p,
@@ -146,4 +168,5 @@ ul {
   display: none;
   padding: 0;
   border-top: none;
+  max-width: 1000px;
 }
