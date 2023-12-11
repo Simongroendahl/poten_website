@@ -111,6 +111,7 @@ button.darkbrown-button {
 /* Generel classnames for "content" */
 .content {
   padding: 0 var(--spacing-medium) 0 var(--spacing-medium);
+  max-width: 1000px;
 }
 
 /* Generel classnames for flex and grid --> not specific */
