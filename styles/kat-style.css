@@ -51,36 +51,6 @@ body * {
   background-size: 110%;
 }
 
-@media (min-width: 1000px) {
-  .menu {
-    display: flex;
-    flex-direction: row;
-    margin: 25px 0px 25px 0px;
-  }
-  .menu .card1,
-  .card2,
-  .card3 {
-    width: 300px;
-    height: 250px;
-    -webkit-mask-image: linear-gradient(transparent, black 50%);
-    mask-image: linear-gradient(transparent, black 50%);
-    border-radius: 0 0 var(--rounding-medium) var(--rounding-medium);
-    background-size: cover;
-  }
-  /* Generel styling for foder content */
-  .food-info-1 {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-  }
-  .food-pic {
-    display: grid;
-    justify-self: start;
-  }
-  .food-text {
-    display: grid;
-    justify-self: end;
-  }
-}
 .food-list {
   gap: var(--spacing-medium);
 }
@@ -96,7 +66,14 @@ ul {
   /* --spacing-medium: 20px; */
 }
 
-/* General styling for the hero images on the dog subpages */
+.display-pic {
+  border: 5px solid white;
+  color: white;
+  border-radius: var(--rounding-small);
+  margin-bottom: var(--spacing-large);
+}
+
+/* General styling for the hero images on the cog subpages */
 .hero-img {
   position: relative;
   padding: 25px 25px;
@@ -147,7 +124,16 @@ ul {
     text-align: center;
   }
 }
-
+.vaadfoder-info {
+  background-image: url("../images/cat_stretch.jpg");
+  background-position: center center;
+  background-size: cover;
+  padding: 30px;
+  border: 5px solid white;
+  color: white;
+  border-radius: var(--rounding-small);
+  margin-bottom: var(--spacing-large);
+}
 .barf-info {
   background-image: url("../images/kat-barf-baggrund.jpg");
   background-position: center center;

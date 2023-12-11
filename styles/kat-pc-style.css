@@ -1,0 +1,73 @@
+@media (min-width: 1000px) {
+  /* .menu {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 0px 25px 0px;
+  }
+  .menu .card1,
+  .card2,
+  .card3 {
+    width: 300px;
+    height: 250px;
+    -webkit-mask-image: linear-gradient(transparent, black 50%);
+    mask-image: linear-gradient(transparent, black 50%);
+    border-radius: 0 0 var(--rounding-medium) var(--rounding-medium);
+    background-size: cover;
+  } */
+
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 calc(var(--spacing-large) * 3) 0 calc(var(--spacing-large) * 3);
+    gap: var(--spacing-large);
+
+    & .card1,
+    .card2,
+    .card3 {
+      width: 100%;
+      min-width: 275px;
+      height: 450px;
+      margin: 0;
+      flex: 1;
+    }
+  }
+  .menu .card1 {
+    background-size: 150%;
+  }
+  .menu .card2 {
+    background-size: 150%;
+  }
+  .card .text {
+    height: 75px;
+    & p {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Generel styling for foder content */
+  .food-info-1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .food-pic {
+    display: grid;
+    justify-self: start;
+  }
+  .food-text {
+    display: grid;
+    justify-self: end;
+  }
+  .vaadfoder-info {
+    background-image: url("../images/cat_stretch.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 40px;
+    border: 5px solid white;
+    color: white;
+    border-radius: var(--rounding-small);
+    margin-bottom: var(--spacing-large);
+    display: flex;
+    align-content: space-between;
+    gap: 50px;
+  }
+}
