@@ -1,8 +1,16 @@
 body * {
   margin: auto;
+
+  & ol, ul {
+    margin: 0 var(--spacing-large) 0 var(--spacing-large);
+  }
 }
 
 /* General styling for the 3 dog menu cards*/
+.pc-only {
+  display: none;
+}
+
 .menu .card1, .card2, .card3 {
     width: 275px;
     height: 225px;
@@ -51,8 +59,9 @@ body * {
 }
 
 .bg-image-nature {
-  background-image: url('../images/palm-bg.webp');
+  background-image: url('../images/palm-bg.jpg');
   background-size: cover;
+  background-position: right;
 }
 
 /* General styling for the hero images on the dog subpages */
@@ -65,7 +74,6 @@ body * {
 .foder-bg {
   background-image: url('../images/dog-food-light.webp');
   background-position: center center;
-  background-size: cover;
   background-size: 300%;
 }
 
@@ -138,7 +146,6 @@ body * {
 .kodben-card1 {
   background-image: url('../images/dog-chewing.webp');
   background-position: center center;
-  background-size: cover;
   background-size: 200%;
   border-radius: var(--rounding-small);
 }

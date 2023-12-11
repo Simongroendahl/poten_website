@@ -1,4 +1,5 @@
 @import url("theme.css");
+@import url("pc-main.css");
 
 /* Fonts - 'Londrina Outline', 'Londrina Solid', 'Neucha', 'Outfit' */
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Solid:wght@300;400;900&family=Neucha&family=Outfit:wght@300;400;500;700&display=swap");
@@ -44,6 +45,10 @@ a {
   text-decoration: none;
 }
 
+.hide {
+  display: none !important;
+}
+
 /* Headings, paragraphs and lists */
 h1,
 h2,
@@ -65,9 +70,7 @@ h2 {
   margin-bottom: var(--spacing-small);
 }
 
-p,
-ol,
-ul {
+p, ol, ul {
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 1.1rem;
@@ -85,9 +88,22 @@ button:not(.unstyled) {
   align-items: center;
   justify-content: center;
 
+  margin-bottom: var(--spacing-medium);
   border-radius: var(--rounding-small);
   border: 4px solid white;
-  background-color: rgb(var(--darkgreen));
+  background-color: rgba(var(--darkgreen), 0.9);
+}
+
+button.brown-button {
+  background-color: rgba(var(--lightbrown), 0.9);
+}
+
+button.red-button {
+  background-color: rgba(var(--brownred), 0.9);
+}
+
+button.darkbrown-button {
+  background-color: rgba(var(--darkbrown), 0.9);
 }
 
 /* Generel classnames for "content" */
@@ -134,13 +150,13 @@ button:not(.unstyled) {
   display: flex;
   flex-direction: row;
   position: relative;
-  width: 100vw;
+  width: 100%;
   padding: 1.6rem 2rem;
   z-index: 999;
 }
 
 nav {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -154,22 +170,31 @@ nav a {
 nav ul {
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 5cqw;
 }
 
 nav ul li {
   list-style-type: none;
 }
 
+nav ul li a:active {
+  transform: translateY(2px);
+}
+
 nav ul li a:hover {
-  color: whitesmoke;
-  background-color: #09b122;
+  color: rgb(26, 26, 26);
 }
 
 .home_knap {
   color: #1e1e1e;
   display: flex;
+  white-space: nowrap;
   gap: 1rem;
+  min-width: 166px;
+}
+
+.home_knap a {
+  min-width: 166px;
 }
 
 #home_knap_hvid {
@@ -211,17 +236,18 @@ footer {
 .footer_wrapper {
   height: 360px;
   width: 100%;
-  padding: 0 100px;
+  padding: 0 6.25rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   justify-items: start;
 }
 
 .footer_logo {
   background-image: url(/images/poten_logo_groen.svg);
-  background-size: cover;
-  justify-self: center;
-  width: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
   height: 145px;
 }
 
@@ -292,4 +318,74 @@ footer {
 .footer_ikon {
   height: 48px;
   width: 48px;
+}
+
+@media screen and (max-width: 992px) {
+}
+
+/* Mobile media query -- Mobile media query */
+
+@media screen and (max-width: 400px) {
+  footer {
+    background-color: rgba(20, 20, 18, 0.95);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .footer_wrapper {
+    height: 100%;
+    width: 100%;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footercontainer_left {
+    height: 100%;
+    width: 100%;
+    padding: 2rem 0 0 0;
+    justify-items: left;
+    text-align: justify;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .footercontainer_mid {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .footercontainer_right {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    text-align: end;
+    position: relative;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer_logo {
+    background-image: url(/images/poten_logo_groen.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-self: center;
+    width: 75px;
+    height: 72.5px;
+  }
+
+  .footer_bold {
+    text-align: center;
+  }
 }

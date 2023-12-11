@@ -82,10 +82,27 @@ input {
 
 textarea {
   position: absolute;
-  left: 24.5%;
+  left: 31.5%;
   width: 354px;
   height: 160px;
   padding: 0.7em;
   margin-bottom: 0.5rem;
   resize: vertical;
+}
+
+#kontakt_button {
+  display: inline-flex;
+  justify-content: center;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: #131313;
+  padding: 0 10rem;
+  border-radius: 8px;
+  transition: 0.2s;
+  will-change: transform;
+}
+
+#kontakt_button:active {
+  transform: translateY(2px);
 }
