@@ -111,6 +111,7 @@ button.darkbrown-button {
 /* Generel classnames for "content" */
 .content {
   padding: 0 var(--spacing-medium) 0 var(--spacing-medium);
+  max-width: 1000px;
 }
 
 /* Generel classnames for flex and grid --> not specific */
@@ -152,6 +153,7 @@ button.darkbrown-button {
   display: flex;
   flex-direction: row;
   position: relative;
+  background-color: white;
   width: 100%;
   max-width: 1600px;
   padding: 1.6rem 2rem;
@@ -331,6 +333,23 @@ footer {
   width: 48px;
 }
 
+/* Burger menu */
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #1e1e1e;
+}
+
 @media screen and (max-width: 992px) {
 }
 
@@ -398,5 +417,50 @@ footer {
 
   .footer_bold {
     text-align: center;
+  }
+
+  /* Burger menu */
+
+  .nav_wrapper {
+    position: fixed;
+    padding: 16px 16px 16px 16px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 60px;
+    gap: 0;
+    flex-direction: column;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 2rem 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
   }
 }
