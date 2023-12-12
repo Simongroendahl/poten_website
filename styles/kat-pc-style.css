@@ -60,7 +60,7 @@
     justify-self: end;
   }
   .vaadfoder-info {
-    background-image: url("../images/cat_stretch.jpg");
+    background-image: url("../images/cat_stretch.webp");
     background-position: center center;
     background-size: cover;
     padding: 40px;
@@ -71,7 +71,7 @@
     margin-bottom: var(--spacing-large);
     display: flex;
     align-content: space-between;
-    gap: 80px;
+    gap: 100px;
   }
   .gap {
     gap: 20px;

@@ -136,6 +136,16 @@ ul {
   border-radius: var(--rounding-small);
   margin-bottom: var(--spacing-large);
 }
+.vaadfoder-card {
+  background-color: rgba(var(--darkgreen), 0.8);
+  border-radius: var(--rounding-small);
+
+  & img {
+    height: auto;
+    max-width: 200px;
+  }
+}
+
 .barf-info {
   background-image: url("../images/kat-barf-baggrund.webp");
   background-position: center center;
