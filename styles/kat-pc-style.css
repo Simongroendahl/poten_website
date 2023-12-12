@@ -102,4 +102,20 @@
     height: 450px;
     flex: 1;
   }
+  #vaadfoder-grid-pc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: auto;
+    width: auto;
+  }
+  .vaadfoder-card {
+    display: grid;
+    justify-self: stretch;
+    width: 450px;
+    height: 450px;
+  }
+  .pc-pic-resize {
+    scale: 130%;
+  }
 }
