@@ -127,7 +127,7 @@ ul {
   }
 }
 .vaadfoder-info {
-  background-image: url("../images/cat_stretch.jpg");
+  background-image: url("../images/cat_stretch.webp");
   background-position: center center;
   background-size: cover;
   padding: 30px;
@@ -137,7 +137,7 @@ ul {
   margin-bottom: var(--spacing-large);
 }
 .barf-info {
-  background-image: url("../images/kat-barf-baggrund.jpg");
+  background-image: url("../images/kat-barf-baggrund.webp");
   background-position: center center;
   background-size: cover;
 
