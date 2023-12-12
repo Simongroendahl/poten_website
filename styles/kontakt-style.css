@@ -107,3 +107,71 @@ textarea {
 #kontakt_button:active {
   transform: translateY(2px);
 }
+
+@media screen and (max-width: 400px) {
+  #kontakt_body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .kontakt_wrapper {
+    background-size: auto;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    max-height: 900px;
+    padding: 0 8px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    margin: auto;
+  }
+
+  .kontaktform_container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+  .kontakthero {
+    position: relative;
+    font-weight: 300;
+    color: whitesmoke;
+    font-size: 4rem;
+    top: 15%;
+  }
+
+  form {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr) 2fr;
+    position: relative;
+    gap: 2rem;
+    margin: auto;
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    background: white;
+    padding: 0.7em;
+    border: 0;
+    outline: none;
+    box-shadow: 0 0 15px 4px rgba(238, 238, 238, 0.06);
+  }
+
+  textarea {
+    position: absolute;
+    left: 31.5%;
+    width: 100%;
+    max-width: 200px;
+    height: 160px;
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+    resize: vertical;
+  }
+}
