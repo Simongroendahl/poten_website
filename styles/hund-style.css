@@ -169,11 +169,6 @@ main * {
   border-radius: var(--rounding-small);
 }
 
-#corgi {
-  width: 400px;
-  height: 230px;
-}
-
 /* Styling the tab */
 .tab {
     overflow: hidden;
