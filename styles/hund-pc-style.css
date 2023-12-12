@@ -95,6 +95,10 @@
         margin: 0;
     }
 
+    .white-content {
+        max-width: 1000px;
+    }
+
     .pc-mb-large {
         margin-bottom: var(--spacing-large);
     }
@@ -140,6 +144,29 @@
         & .pc-grid-2-1 {
             column-gap: calc(var(--spacing-large) * 5);
         }
+    }   
+    
+    #corgi {
+        width: 400px;
+        height: 230px;
+        object-fit: cover;
+        border-radius: var(--spacing-large);
+    }
+
+    .img-flex {
+        flex-direction: column;
+      
+        & img {
+          width: 100%;
+        }
+      }
+
+    .red-card img {
+        max-width: 100px;
+    }
+
+    .green-card img {
+        max-width: 230px;
     }
 
     /* Styling the tabs */
@@ -167,8 +194,8 @@
 
 @media (min-width: 1300px) {
     .barf-card {
-        background-position: 47% 67%;
-        background-size: 350%;
+        background-position: 47% 62%;
+        background-size: 275%;
     }
 
     .pc-grid-2-1 {

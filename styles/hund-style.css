@@ -116,11 +116,11 @@ body * {
   border-radius: var(--rounding-small);
 
   & img {
-    max-width: 170px;
+    max-width: 175px;
   }
 
   & #naturea-width {
-    max-width: 500px;
+    max-width: 280px;
   }
 }
 
@@ -129,7 +129,7 @@ body * {
   border-radius: var(--rounding-small);
 
   & img {
-    max-width: 350px;
+    max-width: 300px;
   }
 }
 
@@ -156,9 +156,9 @@ body * {
 }
 
 .kodben-card1 {
-  background-image: url('../images/dog-chewing.webp');
-  background-position: center center;
-  background-size: 200%;
+  background-image: url('../images/toypoodle-paw.webp');
+  background-position: right center;
+  background-size: 500%;
   border-radius: var(--rounding-small);
 }
 
@@ -167,6 +167,11 @@ body * {
   background-position: center center;
   background-size: cover;
   border-radius: var(--rounding-small);
+}
+
+#corgi {
+  width: 400px;
+  height: 230px;
 }
 
 /* Styling the tab */
