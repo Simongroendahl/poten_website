@@ -76,6 +76,22 @@
   .gap {
     gap: 20px;
   }
+  /* General styling for the hero images on the cog subpages */
+  .hero-img {
+    position: relative;
+    padding: 25px 25px;
+  }
+  .display-pc-barf {
+    display: flex;
+    flex-direction: row;
+  }
+  .display-pic {
+    border: 5px solid white;
+    color: white;
+    border-radius: var(--rounding-small);
+    margin-bottom: var(--spacing-large);
+    max-width: 325px;
+  }
 }
 @media (min-width: 1300px) {
   .menu .card1,
