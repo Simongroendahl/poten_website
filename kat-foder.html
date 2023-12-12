@@ -5,27 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kat - BARF, tør og vådfoder</title>
-
+    <meta name="robots" content="noindex">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/kat-style.css">
     <link rel="stylesheet" href="styles/kat-pc-style.css">
 </head>
 
 <body>
-    <header class="nav_wrapper">
-        <nav>
+    <header id="head-margin" class="nav_wrapper">
+        <nav class="navbar">
             <a href="index.html" class="home_knap">
                 <div class="poten_logo"></div>
                 <div class="poten_home">Poten Amager</div>
             </a>
-            <ul>
-                <li><a href="hund.html">Hund</a></li>
-                <li><a href="kat.html">Kat</a></li>
-                <li><a href="dyrlaege.html">Dyrlæge</a></li>
-                <li><a href="levering.html">Levering</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="hund.html" class="nav-link">Hund</a>
+                </li>
+                <li class="nav-item">
+                    <a href="kat.html" class="nav-link">Kat</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dyrlaege.html" class="nav-link">Dyrlæge</a>
+                </li>
+                <li class="nav-item">
+                    <a href="levering.html" class="nav-link">Levering</a>
+                </li>
+                <li class="nav-item">
+                    <a href="kontakt.html" class="nav-link">Kontakt</a>
+                </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
+
     </header>
     <main class="bg-image-nature">
         <div class="hero-img foder-bg">
@@ -78,14 +95,23 @@
                             kan
                             man tilsætte maden hele rå æg eller servere daggammel kylling.</p>
 
-                    </div> <img class="display-pic" src="images/cat-w-fish.webp" alt="cat eating fish">
+                    </div>
                 </div>
 
-                <div class="flex-col">
+                <div class="display-pc-barf gap ">
+                    <img class="display-pic" src="images/cat-w-fish.webp" alt="cat eating fish">
+                    <div class="flex-col">
 
-                    <h2>Kom ind og få en snak, så vi kan hjælpe dig med at komme godt igang med råfodring.
-                    </h2>
-                    <h2> Din kat vil elske dig for det.</h2>
+                        <div class="info-box styling-card green-card">
+                            <h2 class="mt-large">Kom ind og få en snak, så vi kan hjælpe dig med at komme godt igang med
+                                råfodring.
+                            </h2>
+                            <h2 class="mt-large"> Din kat vil elske dig for det.<button
+                                    class="brown-button mt-large">Find os
+                                    her</button> </h2>
+                        </div>
+
+                    </div>
                 </div>
 
 
@@ -98,13 +124,13 @@
                 <h1>Tørfoder</h1>
                 <div class="line"></div>
             </div>
-            <div class="info-box ">
+            <div class="info-box mt-large ">
                 <h2>Vi har mange forskellige slags tørfodder i butikken. Her er vores udvalg:</h2>
             </div>
             <div class="styling-card food-info-1 red-card">
                 <img class="food-pic" src="images/naturea_kat.webp" alt="naturea-foder">
                 <div class="food-text">
-                    <h2>“NATUREA” tørfoder LAKS eller KYLLING -
+                    <h2 class="mb-large">“NATUREA” tørfoder LAKS eller KYLLING -
                         2 kg & 7 kg</h2>
                     <p>
                         Velegnet til katte i alle aldre, herunder steriliserede katte.
@@ -123,7 +149,7 @@
             <div class="styling-card food-info-1 red-card">
                 <img class="food-pic" src="images/now_fresh_foder_kat.webp" alt="nowfresh-foder">
                 <div class="food-text">
-                    <h2>“NOW” FRESH tørfoder
+                    <h2 class="mb-large">“NOW” FRESH tørfoder
                         3,6 kg - fra Canada </h2>
                     <p>– til alle typer katte store og små, også velegnede til neutraliserede katte.
 
@@ -133,7 +159,7 @@
                     <p>
                         Sunde grøntsager, bær, frugter og urter såsom:
                     </p>
-                    <div class="food-list flex-row">
+                    <div class="gap flex-row">
                         <ul>
                             <li>ærter</li>
                             <li>spinat </li>
@@ -157,13 +183,13 @@
             <div class="styling-card food-info-1 red-card">
                 <img src="images/ZiwiPeak.webp" alt="ZiwiPeak foder">
                 <div class="food-text flex-col">
-                    <h2>
+                    <h2 class="mb-large">
                         Ziwi peak LAM & MAKREL
                         400 g pr. pose - Luft tørret kød i flager.
                     </h2>
                     <p>100 % ren mad!
                         Ziwi peak indeholder: </p>
-                    <div class="food-list flex-col">
+                    <div class="gap flex-col">
                         <ul>
                             <li>Makrel, lam, lamme – lever, kallun, nyre, hjerte og lunge</li>
                             <li>New Zealandsk grønlæbet musling, Inulin fra cikorie, tørret kelp, havsalt, magnesium
@@ -174,7 +200,7 @@
                         </ul>
                     </div>
                     <p>Vitaminer:</p>
-                    <div class="food-list flex-col">
+                    <div class="gap flex-col">
                         <ul>
                             <li>B1-vitamin Supplement, folinsyre, og vitamin D3 Supplement</li>
                             <li>Naturligt konserveret med blandede tocopheroler.</li>

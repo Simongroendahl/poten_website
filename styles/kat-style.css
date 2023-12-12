@@ -1,4 +1,4 @@
-body * {
+main * {
   margin: auto;
 }
 /* Styling for header */
@@ -50,7 +50,9 @@ body * {
   background-position: center;
   background-size: 110%;
 }
-
+.gap {
+  gap: var(--spacing-medium);
+}
 .food-list {
   gap: var(--spacing-medium);
 }
@@ -76,7 +78,7 @@ ul {
 /* General styling for the hero images on the cog subpages */
 .hero-img {
   position: relative;
-  padding: 25px 25px;
+  padding: 75px 25px;
 }
 
 .bg-image-nature {
@@ -162,11 +164,12 @@ ul {
 /* Styling the tab */
 .tab {
   overflow: hidden;
-  height: 100px;
+  height: 125px;
   margin-bottom: var(--spacing-medium);
+  background-color: white;
 
   & img {
-    width: 50px;
+    width: 70px;
     height: 100%;
   }
 }
