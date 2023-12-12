@@ -72,7 +72,7 @@
     }
 
     .kodben-card1 {
-        background-size: 100%;
+        background-position: 32% 30%;
       }
 }
 
@@ -91,8 +91,16 @@
 
     .info-box {
         width: 400px;
-        max-height: 420px;
+        max-height: 425px;
         margin: 0;
+    }
+
+    .info-box.info-box-small {
+        max-height: 325px;
+    }
+
+    .info-box.mx-height {
+        margin: auto;
     }
 
     .white-content {
@@ -150,7 +158,13 @@
         width: 400px;
         height: 230px;
         object-fit: cover;
-        border-radius: var(--spacing-large);
+        border-radius: var(--rounding-medium);
+    }
+
+    #bones {
+        width: 250px;
+        height: 325px;
+        margin: 0;
     }
 
     .img-flex {
