@@ -74,6 +74,11 @@
     .kodben-card1 {
         background-position: 32% 30%;
       }
+
+    .g-card {
+        padding: var(--spacing-large);
+        margin: auto;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -183,6 +188,10 @@
         max-width: 230px;
     }
 
+    .g-card {
+        max-width: 400px;
+    }
+
     /* Styling the tabs */
     .tab {
         height: 125px;
@@ -207,6 +216,15 @@
 }
 
 @media (min-width: 1300px) {
+    .menu .card1,
+    .menu .card2,
+    .menu .card3 {
+      width: 100%;
+      min-width: 350px;
+      height: 450px;
+      flex: 1;
+    }
+
     .barf-card {
         background-position: 47% 62%;
         background-size: 275%;

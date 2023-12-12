@@ -46,3 +46,9 @@
         font-style: italic;
     }
 }
+
+.info-bg {
+    background-image: url('../images/dachshund-img.webp');
+    background-size: cover;
+    background-position: 50% 37%;
+}
