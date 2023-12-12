@@ -359,7 +359,7 @@ footer {
 
 /* Mobile media query -- Mobile media query */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   footer {
     background-color: rgba(20, 20, 18, 0.95);
     height: 100%;

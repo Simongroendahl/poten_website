@@ -182,7 +182,7 @@
 
 /* Mobile Version query -- Mobile Version query -- Mobile Version query */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   /* Layout */
 
   .hero-wrapper {
