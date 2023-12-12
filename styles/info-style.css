@@ -1,0 +1,6 @@
+.styling-dark-card {
+    padding: var(--spacing-medium) var(--spacing-large) var(--spacing-small) var(--spacing-large);
+    margin-bottom: var(--spacing-large);
+    border: 5px solid white;
+    color: rgb(var(--darktext));
+}
