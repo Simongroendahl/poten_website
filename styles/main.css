@@ -148,6 +148,10 @@ button.darkbrown-button {
   margin-bottom: var(--spacing-large);
 }
 
+.mt-large {
+  margin-top: var(--spacing-large);
+}
+
 /* Nav bar styling */
 .nav_wrapper {
   display: flex;
