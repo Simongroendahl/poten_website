@@ -153,10 +153,6 @@ button.darkbrown-button {
   margin-top: var(--spacing-large);
 }
 
-.padding-header {
-  padding-top: 62px;
-}
-
 /* Nav bar styling */
 .nav_wrapper {
   display: flex;
