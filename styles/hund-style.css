@@ -69,6 +69,11 @@ main * {
   background-position: right;
 }
 
+.bg-image-bark {
+  background-image: url('../images/bark-bg.webp');
+  background-size: cover;
+}
+
 /* General styling for the hero images on the dog subpages */
 .hero-img {
   position: relative;
@@ -80,6 +85,18 @@ main * {
   background-image: url('../images/dog-food-light.webp');
   background-position: center center;
   background-size: 300%;
+}
+
+.tilskud-bg {
+  background-image: url('../images/dog-supply-img.webp');
+  background-position: 0 45%;
+  background-size: cover;
+}
+
+.legetoj-bg {
+  background-image: url('../images/dog-toy-img.webp');
+  background-position: 0 45%;
+  background-size: cover;
 }
 
 /* General styling for cards */

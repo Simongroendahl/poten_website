@@ -9,46 +9,35 @@
     padding: 0 var(--spacing-small) var(--spacing-large) var(--spacing-small);
 }
 
-.img-div {
-    width: 100%;
-    height: 300px;
-}
+.g-card {
+    padding: var(--spacing-large);
+    margin: auto;
+    border-radius: var(--rounding-medium);
+    width: 85%;
 
-.img-full-size {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    & h2 {
+        font-style: italic;
+        font-size: 1.5rem;
+    }
 }
 
 .lightgreen-card {
     background-color: rgb(var(--lightgreen));
-    border-radius: var(--rounding-large);
-
-    & h2 {
-        font-style: italic;
-    }
+    margin-bottom: var(--spacing-large);
 }
 
 .green-card2 {
     background-color: rgb(var(--green));
-    border-radius: var(--rounding-large);
-
-    & h2 {
-        font-style: italic;
-    }
 }
 
 .darkgreen-card {
     background-color: rgb(var(--darkgreen));
-    border-radius: var(--rounding-large);
-
-    & h2 {
-        font-style: italic;
-    }
+    margin-bottom: var(--spacing-large);
 }
 
+
 .info-bg {
-    background-image: url('../images/dachshund-img.webp');
-    background-size: cover;
-    background-position: 50% 37%;
+    background-image: url('../images/dog-background-img.jpg');
+    background-size: 120%;
+    background-position: 27% 60%;
 }
