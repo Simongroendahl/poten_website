@@ -92,7 +92,7 @@ ul {
 }
 
 .bg-image-nature {
-  background-image: url(../images/vandfarve.jpg);
+  background-image: url('../images/vandfarve.jpg');
 }
 
 .styling-card {
@@ -179,6 +179,38 @@ ul {
   background-size: 130%;
   color: white;
   letter-spacing: 2px;
+}
+
+.tilskud-bg {
+  background-image: url("../images/cat_on_washer.webp");
+  background-position: center right;
+  background-size: cover;
+  background-size: 130%;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.legetoj-bg {
+  background-image: url("../images/cat_playing.webp");
+  background-position: center right;
+  background-size: cover;
+  background-size: 130%;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholder-div {
+  min-width: 300px;
+}
+
+.margin-auto {
+  margin: auto;
 }
 
 /* Styling the tab */

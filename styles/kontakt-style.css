@@ -7,14 +7,14 @@
 }
 
 .kontakt_wrapper {
-  background-image: url(/images/kontakt_baggrund.png);
+  background-image: url(../images/kontakt_baggrund.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   margin: auto;
   width: 100%;
-  max-width: 1440px;
+  max-width: 100vw;
   min-height: 900px;
   height: 100%;
   padding: 0 8rem;
@@ -24,13 +24,22 @@
   align-content: center;
 }
 
-.kontakthero {
+.kontakthero,
+.kontaktHeroUnder {
   position: relative;
   font-family: "Londrina Solid", sans-serif;
   letter-spacing: 0.3rem;
   font-weight: 300;
   color: whitesmoke;
   font-size: 4rem;
+  white-space: nowrap;
+}
+
+.kontakthero {
+}
+
+.kontaktHeroUnder {
+  font-size: 2rem;
 }
 
 .kontaktform_container {
@@ -81,6 +90,7 @@ input {
   background: white;
   padding: 0.7em;
   border: 0;
+  border-radius: 4px;
   outline: none;
   box-shadow: 0 0 15px 4px rgba(238, 238, 238, 0.06);
   grid-column: 2 / 3;
@@ -90,6 +100,7 @@ textarea {
   position: relative;
   width: 100%;
   height: 160px;
+  border-radius: 4px;
   padding: 0.7em;
   margin-bottom: 0.5rem;
   resize: vertical;
@@ -103,7 +114,7 @@ textarea {
   background-color: whitesmoke;
   color: #131313;
   padding: 0 10rem;
-  border-radius: 8px;
+  border-radius: 4px;
   transition: 0.2s;
   will-change: transform;
   grid-column: 2 / 3;
