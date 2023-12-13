@@ -1,20 +1,4 @@
 @media (min-width: 1000px) {
-  /* .menu {
-    display: flex;
-    flex-direction: row;
-    margin: 25px 0px 25px 0px;
-  }
-  .menu .card1,
-  .card2,
-  .card3 {
-    width: 300px;
-    height: 250px;
-    -webkit-mask-image: linear-gradient(transparent, black 50%);
-    mask-image: linear-gradient(transparent, black 50%);
-    border-radius: 0 0 var(--rounding-medium) var(--rounding-medium);
-    background-size: cover;
-  } */
-
   .menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
