@@ -87,6 +87,12 @@ main * {
   background-size: 300%;
 }
 
+.legetoj-bg {
+  background-image: url('../images/dog-toy-img.webp');
+  background-position: 0 45%;
+  background-size: cover;
+}
+
 /* General styling for cards */
 .styling-card {
   padding: var(--spacing-medium) var(--spacing-large) var(--spacing-small) var(--spacing-large);
