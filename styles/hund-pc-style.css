@@ -49,8 +49,8 @@
       }
 
     .white-card-styling {
-        padding: var(--spacing-large) calc(var(--spacing-large) * 2) var(--spacing-medium) calc(var(--spacing-large) * 2);
-        margin-bottom: var(--spacing-large);
+        padding: 0 var(--spacing-large) 0 var(--spacing-large);
+        margin-bottom: var(--spacing-medium);
     }
 
     /* Styling for images */
@@ -76,8 +76,12 @@
       }
 
     .g-card {
-        padding: var(--spacing-large);
-        margin: auto;
+        width: 50%;
+        height: 200px;
+    }
+
+    .g-card.m-both {
+        margin: var(--spacing-medium) 0 var(--spacing-medium) 0;
     }
 }
 
@@ -189,7 +193,11 @@
     }
 
     .g-card {
-        max-width: 400px;
+        max-height: 150px;
+    }
+
+    .g-card.lightgreen-card {
+        max-height: 130px;
     }
 
     /* Styling the tabs */
@@ -233,5 +241,10 @@
     .pc-grid-2-1 {
         grid-template-columns: 1.3fr 1fr;
         column-gap: calc(var(--spacing-large) * 4);
+    }
+
+    .hero-img.info-bg {
+        background-size: cover;
+        background-position: 0 60%;
     }
 }
