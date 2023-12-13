@@ -92,7 +92,7 @@ ul {
 }
 
 .bg-image-nature {
-  background-image: url('../images/vandfarve.jpg');
+  background-image: url("../images/vandfarve.jpg");
 }
 
 .styling-card {
@@ -154,6 +154,12 @@ ul {
     height: auto;
     max-width: 200px;
   }
+}
+#lilys-pic {
+  border: 5px solid white;
+  color: white;
+  border-radius: var(--rounding-small);
+  margin-bottom: var(--spacing-large);
 }
 
 .barf-info {
