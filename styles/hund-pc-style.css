@@ -80,6 +80,7 @@
         height: 200px;
     }
 
+    /* Styling spacing */
     .g-card.m-both {
         margin: var(--spacing-medium) 0 var(--spacing-medium) 0;
     }
@@ -90,6 +91,7 @@
 }
 
 @media (min-width: 1000px) {
+    /* Styling for only shown pc or hidden pc */
     .pc-hide {
         display: none;
     }
@@ -102,28 +104,7 @@
         width: 175px;
     }
 
-    .info-box {
-        width: 400px;
-        max-height: 425px;
-        margin: 0;
-    }
-
-    .info-box.info-box-small {
-        max-height: 325px;
-    }
-
-    .info-box.mx-height {
-        margin: auto;
-    }
-
-    .white-content {
-        max-width: 1000px;
-    }
-
-    .pc-mb-large {
-        margin-bottom: var(--spacing-large);
-    }
-
+    /* Menu styling */
     .menu {
         display: flex;
         flex-direction: row;
@@ -139,15 +120,6 @@
         }
     }
 
-    .card .text {
-        height: 75px;
-    
-        & p {
-            font-size: 1.5rem;
-            max-width: 80%;
-        }
-    }
-
     .menu .card1 {
         background-size: 550%;
     }
@@ -157,16 +129,35 @@
         background-position: 27%;
     }
 
-    .barf-card {
-        & .barf-margin {
-            margin: 0;
-        }
+    /* Card and info-box styling */
+    .info-box.info-box-small {
+        max-height: 325px;
+    }
 
-        & .pc-grid-2-1 {
-            column-gap: calc(var(--spacing-large) * 5);
-        }
-    }   
+    .info-box.mx-height {
+        margin: auto;
+    }
+
+    .white-content {
+        max-width: 1000px;
+    }
+
+    .card .text {
+        height: 75px;
     
+        & p {
+            font-size: 1.5rem;
+            max-width: 80%;
+        }
+    }
+    
+    /* Image styling */
+    .info-box {
+        width: 400px;
+        max-height: 425px;
+        margin: 0;
+    }
+
     #corgi {
         width: 400px;
         height: 230px;
@@ -186,7 +177,7 @@
         & img {
           width: 100%;
         }
-      }
+    }
 
     .red-card img {
         max-width: 100px;
@@ -202,6 +193,25 @@
 
     .g-card.lightgreen-card {
         max-height: 130px;
+    }
+
+    .barf-card {
+        & .barf-margin {
+            margin: 0;
+        }
+
+        & .pc-grid-2-1 {
+            column-gap: calc(var(--spacing-large) * 5);
+        }
+    }   
+
+    /* Spacing and margin styling */
+    .pc-mb-large {
+        margin-bottom: var(--spacing-large);
+    }
+
+    .pc-p-tb-large {
+        padding: var(--spacing-large) 0 var(--spacing-medium) 0;
     }
 
     /* Styling the tabs */
@@ -228,6 +238,7 @@
 }
 
 @media (min-width: 1300px) {
+    /* Styling few items for 1300px */
     .menu .card1,
     .menu .card2,
     .menu .card3 {
