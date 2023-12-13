@@ -32,7 +32,7 @@ main * {
   color: white;
 }
 .brown-button a:hover {
-  color: var(--darkgreen);
+  color: rgba(var(--darkgreen));
 }
 
 .menu .card {
@@ -63,9 +63,7 @@ main * {
 .gap {
   gap: var(--spacing-medium);
 }
-.food-list {
-  gap: var(--spacing-medium);
-}
+
 /* "Kat" subpages styling */
 /*Spacing between sections in the text */
 .tabcontent p,
@@ -95,14 +93,6 @@ ul {
   background-image: url("../images/vandfarve.jpg");
 }
 
-.styling-card {
-  padding: var(--spacing-medium) var(--spacing-large) var(--spacing-small)
-    var(--spacing-large);
-
-  & h2 {
-    text-align: center;
-  }
-}
 /* different card styles */
 .white-card-styling {
   padding: var(--spacing-large) var(--spacing-large) var(--spacing-medium)

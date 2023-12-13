@@ -101,6 +101,12 @@ p {
 
   border-radius: var(--rounding-small);
 }
+a {
+  color: rgba(var(--lightbrown));
+}
+a:hover {
+  color: rgba(var(--lightgreen));
+}
 
 @media (min-width: 1000px) {
   .grid_1_1 {
@@ -115,7 +121,7 @@ p {
     height: auto;
   }
   .banner-laege {
-    background-image: url(../images/pote-banner-laege.webp);
+    background-image: url(../images/pote-laege-banner.webp);
     background-position: center;
     background-size: cover;
     background-size: 100%;
