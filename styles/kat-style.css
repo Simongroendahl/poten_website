@@ -155,7 +155,7 @@ ul {
     max-width: 200px;
   }
 }
-#lilys-pic {
+.cat-display-pic {
   border: 5px solid white;
   color: white;
   border-radius: var(--rounding-small);
