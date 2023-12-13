@@ -17,9 +17,19 @@
 .herotext {
   text-align: end;
   /*font-size: 10rem;*/
-  font-size: 8cqw;
+  font-size: 10cqw;
   font-weight: 300;
   padding-right: 2rem;
+}
+
+#hero1 {
+  transform: rotate(-5deg);
+  justify-self: start;
+}
+
+#hero2 {
+  transform: rotate(4deg);
+  justify-self: end;
 }
 
 .landing_text {
@@ -60,7 +70,8 @@
   border: 2px solid #171717;
   background-color: #f5f5f5;
   box-shadow: 2px 18px 40px -12px rgb(9, 9, 9);
-  gap: 1rem;
+  gap: 8px;
+  padding: 1rem 2rem;
 }
 
 .knaptekst {
@@ -72,11 +83,9 @@
   line-height: none;
   white-space: nowrap;
   letter-spacing: 0.48px;
-  padding: 1rem 2rem;
 }
 
 #landing_knap {
-  width: 292px;
   /*background-color: #1d4208;*/
   background: linear-gradient(355deg, rgba(4, 57, 7, 1) 22%, rgba(16, 145, 37, 1) 100%);
   box-shadow: 5px 18px 40px -12px rgb(9, 9, 9), -1px -3px 48px 4px rgba(56, 219, 26, 0.3) inset;
@@ -131,7 +140,7 @@
   display: grid;
   height: 100%;
   width: 100%;
-  justify-items: end;
+  justify-items: center;
   z-index: 2;
   align-content: center;
   padding: 4rem 2rem;
