@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kat</title>
+    <meta name="robots" content="noindex">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/kat-style.css">
     <link rel="stylesheet" href="styles/kat-pc-style.css">
@@ -12,25 +13,42 @@
 
 <body>
     <header class="nav_wrapper">
-        <nav>
+        <nav class="navbar">
             <a href="index.html" class="home_knap">
                 <div class="poten_logo"></div>
                 <div class="poten_home">Poten Amager</div>
             </a>
-            <ul>
-                <li><a href="hund.html">Hund</a></li>
-                <li><a href="kat.html">Kat</a></li>
-                <li><a href="dyrlaege.html">Dyrlæge</a></li>
-                <li><a href="levering.html">Levering</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="hund.html" class="nav-link">Hund</a>
+                </li>
+                <li class="nav-item">
+                    <a href="kat.html" class="nav-link">Kat</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dyrlaege.html" class="nav-link">Dyrlæge</a>
+                </li>
+                <li class="nav-item">
+                    <a href="levering.html" class="nav-link">Levering</a>
+                </li>
+                <li class="nav-item">
+                    <a href="kontakt.html" class="nav-link">Kontakt</a>
+                </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
+
     </header>
     <main>
-        <h1>Kat</h1>
+        <h1 class="mb-large">Kat</h1>
         <div class="menu flex-col">
 
-            <a href="kat-foder.html" class="card">
+            <a href="kat-foder.html" class="card box-shadow">
                 <div></div>
                 <div class="text">
                     <p>Barf, tør- og vådfoder</p>
@@ -38,7 +56,7 @@
                 <div class="card1">
                 </div>
             </a>
-            <a href="kat-tilskud.html" class="card">
+            <a href="kat-tilskud.html" class="card box-shadow">
                 <div></div>
                 <div class="text">
                     <p>Tilskud, tøj & udstyr</p>
@@ -46,9 +64,9 @@
                 <div class="card2">
                 </div>
             </a>
-            <a href="kat-legetoj.html" class="card">
+            <a href="kat-legetoj.html" class="card box-shadow">
                 <div></div>
-                <div class="text">
+                <div class=" text">
                     <p>Legetøj & aktivering</p>
                 </div>
                 <div class="card3">
@@ -101,6 +119,7 @@
             </div>
         </div>
     </footer>
+    <script src="poten.js"></script>
 </body>
 
 

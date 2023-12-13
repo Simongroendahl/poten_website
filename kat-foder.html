@@ -5,27 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kat - BARF, tør og vådfoder</title>
-
+    <meta name="robots" content="noindex">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/kat-style.css">
     <link rel="stylesheet" href="styles/kat-pc-style.css">
 </head>
 
 <body>
-    <header class="nav_wrapper">
-        <nav>
+    <header id="head-margin" class="nav_wrapper">
+        <nav class="navbar">
             <a href="index.html" class="home_knap">
                 <div class="poten_logo"></div>
                 <div class="poten_home">Poten Amager</div>
             </a>
-            <ul>
-                <li><a href="hund.html">Hund</a></li>
-                <li><a href="kat.html">Kat</a></li>
-                <li><a href="dyrlaege.html">Dyrlæge</a></li>
-                <li><a href="levering.html">Levering</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="hund.html" class="nav-link">Hund</a>
+                </li>
+                <li class="nav-item">
+                    <a href="kat.html" class="nav-link">Kat</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dyrlaege.html" class="nav-link">Dyrlæge</a>
+                </li>
+                <li class="nav-item">
+                    <a href="levering.html" class="nav-link">Levering</a>
+                </li>
+                <li class="nav-item">
+                    <a href="kontakt.html" class="nav-link">Kontakt</a>
+                </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
+
     </header>
     <main class="bg-image-nature">
         <div class="hero-img foder-bg">
@@ -48,7 +65,7 @@
 
         </div>
         <div class="content">
-            <div class="info-box">
+            <div class="info-box mb-large">
                 <h1>Helt rene råvarer,
                     intet tilsat, ingen kemi.
                     Konserveret med E vitamin.</h1>
@@ -56,157 +73,244 @@
             </div>
 
             <!-- Tab content -->
-            <div id="Barf" class="tabcontent">
+            <section class="content flex-col">
+                <div id="Barf" class="tabcontent">
+
+                    <div class="flex-row line-heading">
+                        <div class="line"></div>
+                        <h1>Barf</h1>
+                        <div class="line"></div>
+                    </div>
+                    <div class="flex-col">
+                        <div class="barf-info styling-card ">
+                            <h2>Katte elsker kød... Prøv BARF</h2>
+                            <p>– Specielt fjerkræ, indmad & oksekød med brusk. Vi har et kæmpe udvalg i butikkerne i 500
+                                gram, 1
+                                og 2 kilo. Fint hakket og groft hakket samt hele kyllinge halse.
+                                Om nogen er kattene jo domesticerede rovdyr, og hvorfor så snyde dem for det rå?
+                            </p>
+                            <p> Katte er dog lidt anderledes skruet sammen end hundene indvendigt, så der gælder lidt
+                                andre
+                                regler med hensyn til fodring. Katte skal f.eks. have adgang til mad løbende; ikke noget
+                                med
+                                fastedage eller bendage, og katte kan heller ikke optage vegetabilske fedtsyrer.
+
+                                Mange katte bryder sig ikke om fiskeolie – i det hele taget er katte ret kræsne – så
+                                derfor
+                                kan
+                                man tilsætte maden hele rå æg eller servere daggammel kylling.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="display-pc-barf gap ">
+                        <img class="display-pic" src="images/cat-w-fish.webp" alt="cat eating fish">
+                        <div class="flex-col">
+
+                            <div class="info-box styling-card green-card">
+                                <h2 class="mt-large">Kom ind og få en snak, så vi kan hjælpe dig med at komme godt igang
+                                    med
+                                    råfodring.
+                                </h2>
+                                <h2 class="mt-large"> Din kat vil elske dig for det.<button
+                                        class="brown-button mt-large">Find os
+                                        her</button> </h2>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+        </div>
+        <section class="content flex-col">
+            <div id="Torfoder" class="tabcontent">
+
                 <div class="flex-row line-heading">
                     <div class="line"></div>
-                    <h1>Barf</h1>
+                    <h1>Tørfoder</h1>
                     <div class="line"></div>
                 </div>
-                <div class="flex-col">
-                    <div class="barf-info styling-card ">
-                        <h2>Katte elsker kød... Prøv BARF</h2>
-                        <p>– Specielt fjerkræ, indmad & oksekød med brusk. Vi har et kæmpe udvalg i butikkerne i 500
-                            gram, 1
-                            og 2 kilo. Fint hakket og groft hakket samt hele kyllinge halse.
-                            Om nogen er kattene jo domesticerede rovdyr, og hvorfor så snyde dem for det rå?
+                <div class="info-box mt-large ">
+                    <h2>Vi har mange forskellige slags tørfodder i butikken. Her er vores udvalg:</h2>
+                </div>
+                <div class="styling-card food-info-1 red-card box-shadow">
+                    <img class="food-pic" src="images/naturea_kat.webp" alt="naturea-foder">
+                    <div class="food-text">
+                        <h2 class="mb-large">“NATUREA” tørfoder LAKS eller KYLLING -
+                            2 kg & 7 kg</h2>
+                        <p>
+                            Velegnet til katte i alle aldre, herunder steriliserede katte.
+                            Da foderet giver en sund og blank pels, afhjælper det også pelsknuder og hårboller.
+                            Indholdet af animalske ingredienser i Naturea LAKS / KYLLING
+                            består af 75% laks/kylling, kartoffel, kyllingefedt, bryggersgær, carob, hørfrø, fiskeolie,
+                            tang,
+                            æble, tranebær, blåbær, tomat, kaliumchlorid, yucca schidigera.
+
                         </p>
-                        <p> Katte er dog lidt anderledes skruet sammen end hundene indvendigt, så der gælder lidt andre
-                            regler med hensyn til fodring. Katte skal f.eks. have adgang til mad løbende; ikke noget med
-                            fastedage eller bendage, og katte kan heller ikke optage vegetabilske fedtsyrer.
+                        <p> Udover fisk/kylling består foderet af den rette mængde Omega 3 og 6, naturlige antioxidanter
+                            (tocopheroler), vitamin A, E og C.
+                            Dette produkt indeholder ikke GMO’er (Genetisk modificerede organismer).</p>
+                    </div>
+                </div>
+                <div class="styling-card food-info-1 red-card box-shadow">
+                    <img class="food-pic" src="images/now_fresh_foder_kat.webp" alt="nowfresh-foder">
+                    <div class="food-text">
+                        <h2 class="mb-large">“NOW” FRESH tørfoder
+                            3,6 kg - fra Canada </h2>
+                        <p>– til alle typer katte store og små, også velegnede til neutraliserede katte.
 
-                            Mange katte bryder sig ikke om fiskeolie – i det hele taget er katte ret kræsne – så derfor
-                            kan
-                            man tilsætte maden hele rå æg eller servere daggammel kylling.</p>
-
-                    </div> <img class="display-pic" src="images/cat-w-fish.webp" alt="cat eating fish">
+                            Indeholder 100% frisk fersk kød, uden kødmel. NOW! FRESH er fuld af nærende ingredienser som
+                            100% frisk kalkun, laks og and, 100% frisk omega 3 & 6 olier fra kokosnødder, raps og
+                            grøntsager.</p>
+                        <p>
+                            Sunde grøntsager, bær, frugter og urter såsom:
+                        </p>
+                        <div class="gap flex-row">
+                            <ul>
+                                <li>ærter</li>
+                                <li>spinat </li>
+                                <li>tranebær</li>
+                                <li>græskar</li>
+                            </ul>
+                            <ul>
+                                <li>pebermynte</li>
+                                <li>kamille</li>
+                                <li>brombær</li>
+                                <li>lucerne spirer</li>
+                            </ul>
+                            <ul>
+                                <li>tang</li>
+                                <li>linser</li>
+                                <li>gulerødder</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="styling-card food-info-1 red-card box-shadow">
+                    <img src="images/ZiwiPeak.webp" alt="ZiwiPeak foder">
+                    <div class="food-text flex-col">
+                        <h2 class="mb-large">
+                            Ziwi peak LAM & MAKREL
+                            400 g pr. pose - Luft tørret kød i flager.
+                        </h2>
+                        <p>100 % ren mad!
+                            Ziwi peak indeholder: </p>
+                        <div class="gap flex-col">
+                            <ul>
+                                <li>Makrel, lam, lamme – lever, kallun, nyre, hjerte og lunge</li>
+                                <li>New Zealandsk grønlæbet musling, Inulin fra cikorie, tørret kelp, havsalt, magnesium
+                                    aminosyrekompleks,</li>
+                                <li>zink aminosyrekompleks, copper aminosyrekompleks, selengær, mangan
+                                    aminosyrekompleks,
+                                    taurin.</li>
+                            </ul>
+                        </div>
+                        <p>Vitaminer:</p>
+                        <div class="gap flex-col">
+                            <ul>
+                                <li>B1-vitamin Supplement, folinsyre, og vitamin D3 Supplement</li>
+                                <li>Naturligt konserveret med blandede tocopheroler.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="flex-col">
-
-                    <h2>Kom ind og få en snak, så vi kan hjælpe dig med at komme godt igang med råfodring.
-                    </h2>
-                    <h2> Din kat vil elske dig for det.</h2>
+            </div>
+        </section>
+        <section class="content flex-col">
+            <div id="Kodben" class="tabcontent">
+                <div class="flex-row line-heading">
+                    <div class="line"></div>
+                    <h1>Vådfoder</h1>
+                    <div class="line"></div>
                 </div>
-
-
-            </div>
-        </div>
-
-        <div id="Torfoder" class="tabcontent">
-            <div class="flex-row line-heading">
-                <div class="line"></div>
-                <h1>Tørfoder</h1>
-                <div class="line"></div>
-            </div>
-            <div class="info-box ">
-                <h2>Vi har mange forskellige slags tørfodder i butikken. Her er vores udvalg:</h2>
-            </div>
-            <div class="styling-card food-info-1 red-card">
-                <img class="food-pic" src="images/naturea_kat.webp" alt="naturea-foder">
-                <div class="food-text">
-                    <h2>“NATUREA” tørfoder LAKS eller KYLLING -
-                        2 kg & 7 kg</h2>
-                    <p>
-                        Velegnet til katte i alle aldre, herunder steriliserede katte.
-                        Da foderet giver en sund og blank pels, afhjælper det også pelsknuder og hårboller.
-                        Indholdet af animalske ingredienser i Naturea LAKS / KYLLING
-                        består af 75% laks/kylling, kartoffel, kyllingefedt, bryggersgær, carob, hørfrø, fiskeolie,
-                        tang,
-                        æble, tranebær, blåbær, tomat, kaliumchlorid, yucca schidigera.
+                <div class="info-box ">
+                    <h2>Hvorfor vælge vådfoder?</h2>
+                </div>
+                <div class="vaadfoder-info styling-card box-shadow">
+                    <p>Vådfoder til katte er en vigtig del af en sund og afbalanceret kost for vores pelsede venner. Det
+                        er
+                        kendt for at være en god kilde til væske, hvilket kan være særligt vigtigt for katte, der ikke
+                        altid
+                        drikker nok vand. Den høje vandprocent i vådfoder hjælper med at opretholde en sund hydrering og
+                        understøtter samtidig nyrefunktionen.</p>
+                    <p>Ud over væskeindholdet er vådfoder ofte rigt på proteiner, som er essentielle for en
+                        kattefødevares
+                        næringsmæssige profil. Proteiner er afgørende for muskelopbygning, energiproduktion og andre
+                        vigtige
+                        kropsfunktioner.
+                        Det er vigtigt at vælge et vådfoder, der opfylder kattens specifikke ernæringsbehov og er fri
+                        for
+                        unødvendige tilsætningsstoffer eller fyldstoffer.
 
                     </p>
-                    <p> Udover fisk/kylling består foderet af den rette mængde Omega 3 og 6, naturlige antioxidanter
-                        (tocopheroler), vitamin A, E og C.
-                        Dette produkt indeholder ikke GMO’er (Genetisk modificerede organismer).</p>
-                </div>
-            </div>
-            <div class="styling-card food-info-1 red-card">
-                <img class="food-pic" src="images/now_fresh_foder_kat.webp" alt="nowfresh-foder">
-                <div class="food-text">
-                    <h2>“NOW” FRESH tørfoder
-                        3,6 kg - fra Canada </h2>
-                    <p>– til alle typer katte store og små, også velegnede til neutraliserede katte.
 
-                        Indeholder 100% frisk fersk kød, uden kødmel. NOW! FRESH er fuld af nærende ingredienser som
-                        100% frisk kalkun, laks og and, 100% frisk omega 3 & 6 olier fra kokosnødder, raps og
-                        grøntsager.</p>
-                    <p>
-                        Sunde grøntsager, bær, frugter og urter såsom:
-                    </p>
-                    <div class="food-list flex-row">
-                        <ul>
-                            <li>ærter</li>
-                            <li>spinat </li>
-                            <li>tranebær</li>
-                            <li>græskar</li>
-                        </ul>
-                        <ul>
-                            <li>pebermynte</li>
-                            <li>kamille</li>
-                            <li>brombær</li>
-                            <li>lucerne spirer</li>
-                        </ul>
-                        <ul>
-                            <li>tang</li>
-                            <li>linser</li>
-                            <li>gulerødder</li>
-                        </ul>
-                    </div>
                 </div>
-            </div>
-            <div class="styling-card food-info-1 red-card">
-                <img src="images/ZiwiPeak.webp" alt="ZiwiPeak foder">
-                <div class="food-text flex-col">
-                    <h2>
-                        Ziwi peak LAM & MAKREL
-                        400 g pr. pose - Luft tørret kød i flager.
+                <div class="info-box ">
+                    <h2>Her er hvad vi har - kom ind i butikken, og så finder vi ud af hvad der passer bedst
+                        til
+                        din kat.
                     </h2>
-                    <p>100 % ren mad!
-                        Ziwi peak indeholder: </p>
-                    <div class="food-list flex-col">
-                        <ul>
-                            <li>Makrel, lam, lamme – lever, kallun, nyre, hjerte og lunge</li>
-                            <li>New Zealandsk grønlæbet musling, Inulin fra cikorie, tørret kelp, havsalt, magnesium
-                                aminosyrekompleks,</li>
-                            <li>zink aminosyrekompleks, copper aminosyrekompleks, selengær, mangan
-                                aminosyrekompleks,
-                                taurin.</li>
-                        </ul>
+                </div>
+                <div id="vaadfoder-grid-pc">
+                    <div class="vaadfoder-card flex-row styling-card">
+                        <img src="images/bellas-favorit.webp" alt="bellas favorit vådfoder">
+                        <div class="food-text flex-col">
+                            <h2>Bellas favorit vådfoder
+                            </h2>
+                            <h2>400 gr.</h2>
+                            <p>Fugl: Indeholder 40% kylling, 20% and, 10% kalkun, 28,9% brusk, mineraler, taurin.</p>
+                        </div>
                     </div>
-                    <p>Vitaminer:</p>
-                    <div class="food-list flex-col">
-                        <ul>
-                            <li>B1-vitamin Supplement, folinsyre, og vitamin D3 Supplement</li>
-                            <li>Naturligt konserveret med blandede tocopheroler.</li>
-                        </ul>
+                    <div class="vaadfoder-card flex-row styling-card gap">
+                        <img src="images/chrisopherus.webp" alt="christopherus vådfoder">
+                        <div class="food-text flex-col">
+                            <h2>Christopherus
+                            </h2>
+                            <h2>200 gr.</h2>
+                            <p>Vi har mange af de forskellige varianter inde i butikken.</p>
+                        </div>
+                    </div>
+                    <div class="vaadfoder-card flex-row styling-card">
+                        <img class="pc-pic-resize" src="images/ziwipeak-wetfood.webp" alt="ziwipeak vådfoder">
+                        <div class="food-text flex-col">
+                            <h2>Ziwi peak</h2>
+                            <h2>185 gr.</h2>
+                            <p>100% ren mad fra New Zealand
+                                hjort og oksekød.</p>
+                        </div>
+                    </div>
+                    <div class="vaadfoder-card flex-row styling-card gap">
+                        <img class="pc-pic-resize" src="images/bozita-cat-beef-pate-can.webp" alt="bozita vådfoder">
+                        <div class="food-text flex-col">
+                            <h2>Bozita</h2>
+                            <h2>200 gr.</h2>
+                            <p>Vi har mange af de forskellige varianter inde i butikken.</p>
+                        </div>
+                    </div>
+                    <div class="vaadfoder-card flex-row styling-card gap">
+                        <img class="pc-pic-resize" src="images/naturea-wetfood.webp" alt="naturea vådfoder">
+                        <div class="food-text flex-col">
+                            <h2>Naturea</h2>
+                            <h2>85 gr.</h2>
+                            <p>Helt rent og naturlig vådfodder.
+                                Enten med:
+                            </p>
+                            <div class="flex-col">
+                                <ul>
+                                    <li>Kylling</li>
+                                    <li>Kylling m. kanin</li>
+                                    <li>Tun m. rejer</li>
+                                    <li>Tun m. kylling</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div id="Kodben" class="tabcontent">
-            <div class="flex-row line-heading">
-                <div class="line"></div>
-                <h1>Vådfoder</h1>
-                <div class="line"></div>
-            </div>
-            <div class="info-box ">
-                <h2>Hvorfor vælge vådfoder?</h2>
-            </div>
-            <div class="vaadfoder-info styling-card">
-                <p>Vådfoder til katte er en vigtig del af en sund og afbalanceret kost for vores pelsede venner. Det er
-                    kendt for at være en god kilde til væske, hvilket kan være særligt vigtigt for katte, der ikke altid
-                    drikker nok vand. Den høje vandprocent i vådfoder hjælper med at opretholde en sund hydrering og
-                    understøtter samtidig nyrefunktionen.</p>
-                <p>Ud over væskeindholdet er vådfoder ofte rigt på proteiner, som er essentielle for en kattefødevares
-                    næringsmæssige profil. Proteiner er afgørende for muskelopbygning, energiproduktion og andre vigtige
-                    kropsfunktioner.
-                    Det er vigtigt at vælge et vådfoder, der opfylder kattens specifikke ernæringsbehov og er fri for
-                    unødvendige tilsætningsstoffer eller fyldstoffer.
-                    Her er hvad vi har i butikken - kom ind, så finder vi ud af hvad der passer bedst til din kat.</p>
-            </div>
-
-        </div>
+        </section>
     </main>
     <footer>
         <div class="footer_wrapper">

@@ -60,7 +60,7 @@
     justify-self: end;
   }
   .vaadfoder-info {
-    background-image: url("../images/cat_stretch.jpg");
+    background-image: url("../images/cat_stretch.webp");
     background-position: center center;
     background-size: cover;
     padding: 40px;
@@ -71,10 +71,26 @@
     margin-bottom: var(--spacing-large);
     display: flex;
     align-content: space-between;
-    gap: 80px;
+    gap: 100px;
   }
   .gap {
     gap: 20px;
+  }
+  /* General styling for the hero images on the cog subpages */
+  .hero-img {
+    position: relative;
+    padding: 25px 25px;
+  }
+  .display-pc-barf {
+    display: flex;
+    flex-direction: row;
+  }
+  .display-pic {
+    border: 5px solid white;
+    color: white;
+    border-radius: var(--rounding-small);
+    margin-bottom: var(--spacing-large);
+    max-width: 325px;
   }
 }
 @media (min-width: 1300px) {
@@ -85,5 +101,21 @@
     min-width: 350px;
     height: 450px;
     flex: 1;
+  }
+  #vaadfoder-grid-pc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: auto;
+    width: auto;
+  }
+  .vaadfoder-card {
+    display: grid;
+    justify-self: stretch;
+    width: 450px;
+    height: 450px;
+  }
+  .pc-pic-resize {
+    scale: 130%;
   }
 }

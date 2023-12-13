@@ -1,4 +1,4 @@
-body * {
+main * {
   margin: auto;
 }
 /* Styling for header */
@@ -13,6 +13,10 @@ body * {
   mask-image: linear-gradient(transparent, black 50%);
   border-radius: 0 0 var(--rounding-medium) var(--rounding-medium);
   background-size: cover;
+}
+.box-shadow {
+  border-radius: var(--rounding-medium);
+  box-shadow: 5px 18px 40px -12px rgb(9, 9, 9);
 }
 
 .menu .text {
@@ -50,7 +54,9 @@ body * {
   background-position: center;
   background-size: 110%;
 }
-
+.gap {
+  gap: var(--spacing-medium);
+}
 .food-list {
   gap: var(--spacing-medium);
 }
@@ -76,7 +82,7 @@ ul {
 /* General styling for the hero images on the cog subpages */
 .hero-img {
   position: relative;
-  padding: 25px 25px;
+  padding: 75px 25px;
 }
 
 .bg-image-nature {
@@ -125,7 +131,7 @@ ul {
   }
 }
 .vaadfoder-info {
-  background-image: url("../images/cat_stretch.jpg");
+  background-image: url("../images/cat_stretch.webp");
   background-position: center center;
   background-size: cover;
   padding: 30px;
@@ -134,8 +140,18 @@ ul {
   border-radius: var(--rounding-small);
   margin-bottom: var(--spacing-large);
 }
+.vaadfoder-card {
+  background-color: rgba(var(--darkgreen), 0.8);
+  border-radius: var(--rounding-small);
+
+  & img {
+    height: auto;
+    max-width: 200px;
+  }
+}
+
 .barf-info {
-  background-image: url("../images/kat-barf-baggrund.jpg");
+  background-image: url("../images/kat-barf-baggrund.webp");
   background-position: center center;
   background-size: cover;
 
@@ -162,11 +178,12 @@ ul {
 /* Styling the tab */
 .tab {
   overflow: hidden;
-  height: 100px;
+  height: 125px;
   margin-bottom: var(--spacing-medium);
+  background-color: white;
 
   & img {
-    width: 50px;
+    width: 70px;
     height: 100%;
   }
 }

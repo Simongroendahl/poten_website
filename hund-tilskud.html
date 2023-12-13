@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
     <title>Hund - Tilskud, tøj og udstyr</title>
 
     <link rel="stylesheet" href="styles/main.css">
@@ -13,20 +14,36 @@
 
 <body>
     <header class="nav_wrapper">
-        <nav>
-
+        <nav class="navbar">
             <a href="index.html" class="home_knap">
                 <div class="poten_logo"></div>
                 <div class="poten_home">Poten Amager</div>
             </a>
-            <ul>
-                <li><a href="hund.html">Hund</a></li>
-                <li><a href="kat.html">Kat</a></li>
-                <li><a href="dyrlaege.html">Dyrlæge</a></li>
-                <li><a href="levering.html">Levering</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="hund.html" class="nav-link">Hund</a>
+                </li>
+                <li class="nav-item">
+                    <a href="kat.html" class="nav-link">Kat</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dyrlaege.html" class="nav-link">Dyrlæge</a>
+                </li>
+                <li class="nav-item">
+                    <a href="levering.html" class="nav-link">Levering</a>
+                </li>
+                <li class="nav-item">
+                    <a href="kontakt.html" class="nav-link">Kontakt</a>
+                </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
+
     </header>
 
     <main class="bg-image-nature">
@@ -40,18 +57,80 @@
                 <h1>Tilskud</h1>
                 <div class="line"></div>
             </div>
+        </section>
 
-            <div class="info-box styling-card">
-                <h1>Hvorfor tilskud?</h1>
-                <p>For at give din hund de bedste vilkår for et langt og godt hundeliv, kan tilskud være en fordelagtig
-                    løsning.</p>
-                <p>Ligesom mennesker har flere hunde bruf for ekstra næringsstoffer og vitaminer, eller andre tilskud,
-                    ud over det, der er tilgængeligt i deres daglige foder. Derfor kan det være gavnligt at overveje
-                    tilskud til
-                    lige netop din hund.</p>
+        <section class="content flex-col">
+            <div class="pc-flex-row">
+                <div class="pc-flex-col">
+                    <div class="info-box styling-card">
+                        <h2>Hvorfor tilskud?</h2>
+                        <p>For at give din hund de bedste vilkår for et langt og godt hundeliv, kan tilskud være en
+                            fordelagtig
+                            løsning.</p>
+                        <p>Ligesom mennesker har flere hunde bruf for ekstra næringsstoffer og vitaminer, eller andre
+                            tilskud,
+                            ud over det, der er tilgængeligt i deres daglige foder.</p>
+                    </div>
+
+                    <div class="info-box styling-card pc-only">
+                        <h2>Kig forbi allerede i dag</h2>
+                        <p>Lyder noget af dette som lige det din firbenede ven har brug for? Så kig forbi vores butik
+                            allerede i dag!</p>
+                        <p>P.S. du kan også få leveret dine yndlings-varer lige til døren...</p>
+                        <a href="info.html"><button>INFO</button></a>
+                    </div>
+                </div>
+
+                <div class="tilskud-card styling-card">
+                    <h2>Tilskud til din hund</h2>
+                    <p><b>Anti-stress:</b> Har du brug for noget til at hjælpe din hund gennem et stressende og højlydt
+                        nytår,
+                        selskab eller til transportture? - Kom forbi butikken og se vores anti-stress udvalg.</p>
+                    <p><b>Potevoks/creme:</b> Har du noget til at beskytte og pleje din hunds poter fra sne, slud og
+                        salt? -
+                        Se
+                        vores udvalg i butikken af fugtgivende cremer m.m. til din hunds poter.</p>
+                    <p><b>Shampoo:</b> Vidste du at din hunds ph-værdi er lavere end menneskers og at hundens hud derfor
+                        ikke har
+                        godt af menneske shampoo? - Find den shampoo som passer til lige DIN hund.</p>
+                    <p><b>Boost:</b> Trænger din hund til et boost af vitaminer, olier eller andet? - Vi produkter som
+                        styrker
+                        hundens imunforsvar, mobilitet, giver god ånd, giver blød og skinnende pels og meget mere.</p>
+                </div>
+
+                <div class="info-box styling-card pc-hide">
+                    <h2>Kig forbi allerede i dag</h2>
+                    <p>Lyder noget af dette som lige det din firbenede ven har brug for?</p>
+                    <p>Så kig forbi vores butik allerede i dag!</p>
+                    <p>P.S. du kan også få leveret dine yndlings-varer lige til døren...</p>
+                    <a href="info.html"><button>INFO</button></a>
+                </div>
             </div>
+        </section>
 
+        <section class="content">
+            <div class="flex-row line-heading mt-large">
+                <div class="line"></div>
+                <h1>Tøj</h1>
+                <div class="line"></div>
+            </div>
+        </section>
 
+        <section class="content flex-col">
+            <div>
+                <h2>Fryser din hund også?</h2>
+                <p>Tidligere var det en normalt at tro at hundens pels er nok i den kolde efterårs- og vintervejr, men
+                    det er langt fra sandt.</p>
+                <p>Mange hunde har brug for en jakke eller sweater i det kolde vejr. Især små hunde, hunde uden
+                    underuld, hunde med kort eller tynd pels og hunde med sundshedsproblemer. En ting er helt sikkert -
+                    det vil aldrig skade at give din hund jakke på.</p>
+                <p>Om din hund har brug for en sweater, en jakke eller et regnslag, så har vi det.
+                </p>
+            </div>
+            <div class="img-div-full-size">
+                <img class="img-full-size" src="images/Kuldeskema.webp"
+                    alt="Hvor koldt er for koldt? - Kuldeskema som guideline for hunde i kulden">
+            </div>
 
         </section>
     </main>
