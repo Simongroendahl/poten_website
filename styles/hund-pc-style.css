@@ -55,7 +55,7 @@
 
     /* Styling for images */
     .img-flex img {
-        max-width: 200px;
+        max-width: 130px;
         height: 100%;
       }
 
@@ -82,6 +82,10 @@
 
     .g-card.m-both {
         margin: var(--spacing-medium) 0 var(--spacing-medium) 0;
+    }
+
+    .pc-p-tb-large {
+        padding: var(--spacing-large) 0 var(--spacing-medium) 0;
     }
 }
 

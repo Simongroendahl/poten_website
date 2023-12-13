@@ -87,6 +87,12 @@ main * {
   background-size: 300%;
 }
 
+.tilskud-bg {
+  background-image: url('../images/dog-supply-img.webp');
+  background-position: 0 45%;
+  background-size: cover;
+}
+
 .legetoj-bg {
   background-image: url('../images/dog-toy-img.webp');
   background-position: 0 45%;

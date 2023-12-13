@@ -3,6 +3,10 @@
         margin: 0;
     }
 
+    .pc-pt-large {
+        padding-top: var(--spacing-large);
+    }
+
     .tablet-flex-row {
         display: flex;
         flex-direction: row;
