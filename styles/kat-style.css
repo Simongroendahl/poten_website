@@ -28,6 +28,12 @@ main * {
     text-align: center;
   }
 }
+.brown-button a {
+  color: white;
+}
+.brown-button a:hover {
+  color: var(--darkgreen);
+}
 
 .menu .card {
   position: relative;
