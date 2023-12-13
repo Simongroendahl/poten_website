@@ -41,3 +41,5 @@ document.querySelector(".nav-link").forEach(
     navMenu.classList.remove("active");
   }
 );
+
+// Sticky nav bar

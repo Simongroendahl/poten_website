@@ -14,6 +14,7 @@
 html {
   scroll-behavior: smooth;
   margin: auto;
+  background-color: rgb(249, 249, 249);
 }
 
 body {
@@ -161,7 +162,7 @@ button.darkbrown-button {
   display: flex;
   flex-direction: row;
   position: relative;
-  background-color: white;
+  background-color: rgb(249, 249, 249);
   width: 100%;
   max-width: 1600px;
   padding: 1.6rem 2rem;
@@ -181,6 +182,7 @@ nav a {
   font-family: "Londrina Solid", sans-serif;
   font-size: 1.4rem;
   color: black;
+  display: block;
 }
 
 nav ul {
@@ -430,7 +432,7 @@ footer {
   /* Burger menu */
 
   .nav_wrapper {
-    position: fixed;
+    position: sticky;
     padding: 16px 16px 16px 16px;
   }
 
@@ -483,4 +485,6 @@ footer {
   .nav-menu.active {
     left: 0;
   }
+
+  /* Sticky nav bar */
 }
